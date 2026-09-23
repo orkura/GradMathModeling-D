@@ -1,0 +1,38 @@
+# Normalize text files across Windows, Linux, and Overleaf.
+* text=auto
+
+*.py      text eol=lf
+*.ipynb   text eol=lf
+*.tex     text eol=lf diff=tex
+*.cls     text eol=lf
+*.sty     text eol=lf
+*.bib     text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.csv     text eol=lf
+*.json    text eol=lf
+*.yaml    text eol=lf
+*.yml     text eol=lf
+*.toml    text eol=lf
+
+# Data, documents, figures, fonts, and archives are binary.
+*.mat     binary
+*.tif     binary
+*.tiff    binary
+*.xls     binary
+*.xlsx    binary
+*.doc     binary
+*.docx    binary
+*.ppt     binary
+*.pptx    binary
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.svgz    binary
+*.ttf     binary
+*.otf     binary
+*.zip     binary
+*.7z      binary
+
