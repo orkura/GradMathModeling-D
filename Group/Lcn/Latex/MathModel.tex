@@ -1,0 +1,49 @@
+% !TEX program = xelatex
+% 正式论文入口；正文请在 sections/ 中对应的小节文件内撰写。
+\documentclass[bwprint]{gmcmthesis}
+\input{preamble}
+
+\title{山区洪涝灾害下无人机运输与通信协同优化}
+\baominghao{\hspace{6em} 26106190022}
+\schoolname{\hspace{5.8em} 西南科技大学}
+\membera{\hspace{6em} 罗财能}
+\memberb{\hspace{6em} 龙昌淇}
+\memberc{\hspace{6em} 李业展}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\maketitle
+\hypersetup{pageanchor=true}
+\input{sections/00-abstract}
+
+\pagestyle{plain}
+\begingroup
+\renewcommand{\baselinestretch}{1}
+\normalsize
+\setlength{\cftbeforesecskip}{3pt}
+\setlength{\cftbeforesubsecskip}{1pt}
+\maketoc
+\clearpage
+\endgroup
+
+\input{sections/01-introduction/index}
+\input{sections/02-analysis}
+\input{sections/03-assumptions}
+\input{sections/04-notation}
+\input{sections/05-models/index}
+\input{sections/06-validation/index}
+\input{sections/07-evaluation/index}
+\input{sections/08-improvements/index}
+
+\clearpage
+% 添加真实文献引用后，由整合人员在 preamble.tex 开启 BibTeX。
+\ifpaperbibliography
+  \bibliographystyle{gmcm}
+  \bibliography{reference}
+\else
+  \section*{参考文献}
+  \phantomsection
+  \addcontentsline{toc}{section}{参考文献}
+  \noindent 待补充实际引用的文献。
+\fi
+\end{document}
