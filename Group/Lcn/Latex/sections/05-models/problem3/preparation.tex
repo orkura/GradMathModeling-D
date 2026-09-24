@@ -1,7 +1,81 @@
 % !TEX root = ../../../MathModel.tex
-% 负责人：待团队认领。
-% 准备网关、DEM、链路预算、中继无人机及能源组件参数，统一通信判定方法。
+% 负责人：罗财能。
 \subsubsection{模型准备}
 \label{sec:q3:preparation}
 
-待撰写。
+\textbf{（1）数据与局部符号。}
+读取调度中心与服务区、物资需求与配送时限、运输无人机、中继无人机、通信链路参数五个原始工作簿，并使用镇龙乡及周边30米数字高程模型（DEM）。
+共有1个调度中心O01、15个服务区和80个不可拆货箱，总质量为758\,kg，总体积为2.011\,m$^3$。
+医疗物资和首批保障物资取并集后，共31箱具有硬性截止时间。
+各类实体与能源资源的库存见表\ref{tab:q3:inventory}，电池库存包含初始安装在无人机上的电池。
+
+\begin{table}[htbp]
+  \centering
+  \caption{问题三的实体与能源资源参数}
+  \label{tab:q3:inventory}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    类别 & 实体数量 & 能源组数 & 载质量/kg & 容积/m$^3$ & 容量/kWh \\
+    \midrule
+    运输A型 & 4 & 6 & 25 & 0.060 & 4.5 \\
+    运输B型 & 2 & 4 & 30 & 0.073 & 4.0 \\
+    运输C型 & 2 & 4 & 80 & 0.250 & 8.0 \\
+    中继R型 & 2 & 6 & --- & --- & 3.2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+本节以$\mathcal B$表示货箱集合，$\mathcal P$和$\mathcal R$分别表示选用的运输与中继架次集合，$g$表示运输机型。
+货箱$b$的质量、体积、应急优先系数和期望送达时刻分别为$m_b,v_b,w_b,d_b$，$h_b$表示其硬性截止时刻；无硬期限时令$h_b=+\infty$。
+医疗箱的$h_b$不晚于$d_b$，首批箱的$h_b$不晚于首批截止时刻，二者同时适用时取较小值。
+设$s_p,o_p,R_p,C_b$分别为运输准备开始、起飞、返航和货箱交付完成时刻。
+计算统一采用米、秒、千克、kWh和kW，结果表格中的分钟由秒换算。
+
+\textbf{（2）地形、飞行高度与能耗口径。}
+保留原始DEM栅格，将经纬度通过研究区附近的WGS84局部仿射关系转为米制坐标。
+对水平直线航段遍历其经过的全部栅格，取最高地形海拔$H^{\rm DEM}_{ij}$。
+O01作业海拔取附件给定海拔，服务区作业海拔$z_i^{\rm op}$取附件海拔加30\,m，网关海拔取O01海拔加20\,m。
+为同时适用于地面作业点和较高的中继悬停点，定义
+\begin{align}
+  H_{ij}&=\max\{H^{\rm DEM}_{ij}+50,z_i^{\rm op},z_j^{\rm op}\},
+  \label{eq:q3:height}\\
+  t_{gij}&=\frac{H_{ij}-z_i^{\rm op}}{v_g^{\uparrow}}
+           +\frac{d_{ij}}{v_g^{\rm c}}
+           +\frac{H_{ij}-z_j^{\rm op}}{v_g^{\downarrow}}.
+  \label{eq:q3:flight-time}
+\end{align}
+其中$d_{ij}$为水平距离，$v_g^{\uparrow},v_g^{\rm c},v_g^{\downarrow}$为爬升、巡航和下降速度。
+题目给出载荷影响下的等效航程及能耗分解，但未完全展开各项能耗公式，本文补充采用
+\begin{align}
+  L_g(q)&=L_g^0-(L_g^0-L_g^F)\left(\frac{q}{Q_g}\right)^{3/2},
+  \label{eq:q3:range}\\
+  E_{gij}(q)&=E_g^{\rm use}\frac{d_{ij}}{L_g(q)}
+    +\frac{(m_g+q)g_0(H_{ij}-z_i^{\rm op})}{\eta_g^{\uparrow}\,3.6\times10^6}.
+  \label{eq:q3:energy}
+\end{align}
+式中$Q_g$为最大载质量，$L_g^0,L_g^F$为空载、满载等效航程，$E_g^{\rm use}$为满电可用能量，$m_g$为附件空机质量，$g_0=9.80665$\,m/s$^2$，$\eta_g^{\uparrow}$为爬升效率。
+每一航段按交付后的实际剩余载荷$q$计算，最后一段空载返航；不另加下降能耗和题目未给定的运输交接悬停功率。
+这些补充口径直接影响数值结果，不能视为实测能耗模型。
+
+\textbf{（3）双向链路判定。}
+令$P_a^{\rm t},G_a$分别为通信端$a$的发射功率和天线增益，$P_b^{\rm sens},M_b$为接收灵敏度和衰落裕量，$L_{\rm sys}$为系统损耗，则双向允许路径损耗为
+\begin{equation}
+  B_{ab}=\min\left\{
+    P_a^{\rm t}+G_a+G_b-L_{\rm sys}-P_b^{\rm sens}-M_b,
+    P_b^{\rm t}+G_b+G_a-L_{\rm sys}-P_a^{\rm sens}-M_a
+  \right\}.
+  \label{eq:q3:budget}
+\end{equation}
+由附件参数得到直连、运输机至中继接入、中继至网关回传的预算分别为122、116、126\,dB。
+记三维距离为$D_{ab}(t)$，视线受DEM遮挡时$b_{ab}(t)=1$，否则为0，则
+\begin{equation}
+  L_{ab}(t)=32.45+20\log_{10}(2400)
+    +20\log_{10}\!\left(\frac{D_{ab}(t)}{1000}\right)+10b_{ab}(t).
+  \label{eq:q3:path-loss}
+\end{equation}
+频率单位为MHz，距离由米换算为公里；$L_{ab}(t)\le B_{ab}$时链路可用。
+遮挡仅增加10\,dB损耗，并非一旦遮挡就断联。
+
+中继点初筛采用通信薄弱区域包围盒向外扩展1\,km后的500\,m网格，并加入调度中心及服务节点的水平位置，离地高度仅取150\,m和300\,m。
+经DEM范围、回传和运输轨迹覆盖能力筛选，保留37个候选点。
+该离散集合用于控制搜索规模，不等同于对整片DEM上的所有连续悬停位置求最优。

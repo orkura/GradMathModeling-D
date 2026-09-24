@@ -56,13 +56,22 @@ problem1/                 # problem2、problem3、problem4 结构相同
 从仓库根目录进入论文目录，使用 XeLaTeX：
 
 ```powershell
-cd Latex
-latexmk -xelatex -outdir=build MathModel.tex
+cd Group/Lcn/Latex
+latexmk -xelatex MathModel.tex
 ```
 
-生成的 PDF 为 `build/MathModel.pdf`，中间文件也保存在 `build/`。
-该目录已经被仓库忽略，不应把个人编译产物加入 Git。
+生成的 PDF 为当前目录下的 `MathModel.pdf`，中间文件也保存在当前目录，不输出到 `build/`。
+辅助文件、日志和同步文件已被仓库忽略，不应把这些临时编译文件加入 Git。
 正式提交稿如需另行保存，应按仓库协作规范与对应源文件一同提交。
+
+问题三的论文用调度图和交付图由 `figures/problem3/make_paper_figures.py` 读取已保存的仿真结果生成。
+需要重绘时，在当前 `Group/Lcn/Latex/` 目录执行以下命令，再按上述方式编译：
+
+```powershell
+../.venv/python.exe figures/problem3/make_paper_figures.py
+```
+
+两张图输出到 `figures/problem3/`；航路图直接引用 `../Results/Q3/01_routes_and_relays.pdf`。
 
 各小节首行的 `% !TEX root = ...` 指向统一入口，支持该指令的编辑器可以从小节启动全文编译。
 命令行仍应在 `Latex/` 中编译 `MathModel.tex`。
