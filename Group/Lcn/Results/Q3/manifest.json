@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "claim_id": "Q3_SUPPLIED_INSTANCE_FEASIBLE_SCHEDULE",
+  "repository": {
+    "commit": "5169e4f8a58ffec780c8c745de847a74919902aa",
+    "dirty": true
+  },
+  "command": "F:\\Project\\GradMathModeling-D\\Group\\Lcn\\.venv\\python.exe Group\\Lcn\\Code\\run_q3.py --starts 36 --refine-seconds 180",
+  "environment": {
+    "software": [
+      "Python 3.14.6",
+      "numpy 2.4.6",
+      "scipy 1.18.0",
+      "rasterio 1.5.1",
+      "matplotlib 3.11.0",
+      "openpyxl 3.1.5",
+      "pillow 12.3.0",
+      "ortools 9.15.6755"
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "All 80 supplied boxes delivered under the stated flight, deadline, inventory, SOC and continuous raster-radio rules.",
+    "coefficient_domain": "IEEE-754 float64; time tolerance 1e-5 s, energy tolerance 1e-6 kWh",
+    "conventions": "m,s,kg,kWh,kW; appendix-2 supplemental energy assumptions; local affine WGS84/piecewise-constant DEM",
+    "inputs": [
+      "D题/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/通信链路参数.xlsx",
+      "D题/山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "D题/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif"
+    ],
+    "bounds": {
+      "starts": 36,
+      "seed": 20260924,
+      "relay_grid_m": 500,
+      "spatial_step_m": 100,
+      "max_stops": 3,
+      "relay_providers_per_transport_sortie": 1,
+      "refinement_total_seconds": 180.0,
+      "global_optimality_proven": false
+    },
+    "non_claims": [
+      "No global optimality proof",
+      "No certification of real subpixel terrain, weather, interference or unspecified bandwidth"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random (MT19937)",
+    "seed": 20260924
+  },
+  "run": {
+    "started_at": "2026-09-24T06:37:54.665071+00:00",
+    "runtime_seconds": 216.27263559999938,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "Group/Lcn/Results/Q3/01_routes_and_relays.pdf",
+      "sha256": "7c6848bc70096409e568f1335784836948f3b370d32cf891af2df8efdd4686b0"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/01_routes_and_relays.png",
+      "sha256": "ab8a752fa4620f67599cd5e4ef2a90e5f36042d4bbf53c8e8b28abd9b53e9675"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/02_resource_schedule.pdf",
+      "sha256": "e225c67b6c5ce7f6ab03b60aefaf1b25df342702636b762619adc2b35e3cd928"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/02_resource_schedule.png",
+      "sha256": "4d364b3a2627870f36c1660896733caf9524a0454dfe3eaa60e99e8caa80678c"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/03_delivery_performance.pdf",
+      "sha256": "1d0b0795fe95f91c9e8c5fcd37e82bcb360c816e27ae5d658eff72c2fd7226c2"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/03_delivery_performance.png",
+      "sha256": "2414833d1d327878bdca1592bd307885f6d1dd7895b8ff8dcc128d140868ce0c"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/04_communication_guarantee.pdf",
+      "sha256": "857d30665333cd770c4b8b7a33e4fc36e788f6cb21aca48601d43a7e235aa112"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/04_communication_guarantee.png",
+      "sha256": "5b00bdbdc1af7bb8159060bd2f61df8f4c6640c0768e2031ddd467c8a40a715b"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/05_search_comparison.pdf",
+      "sha256": "46b2c20539afd85e1206e4dd767a6ba43b04a2688f02f3428363718865102b6e"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/05_search_comparison.png",
+      "sha256": "9258ddba63193b2e6d1727362914a9feac933b4a2653d4e1d4082037cdae59b2"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/Q3_中继架次.csv",
+      "sha256": "a3b9f08cb93a02866ba8f166a67e8a94c64688bd5f0e00b0c029e62d0b7021eb"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/Q3_能源资源占用.csv",
+      "sha256": "6173ec7939c595444c271a25784d5b1d25726e38891844e8266daec662f899c1"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/Q3_运输架次.csv",
+      "sha256": "0460d04f170c7263b4f3e40464637ed7c1cf1e62a5e510b72178e9f337c1242a"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/Q3_逐箱交付.csv",
+      "sha256": "b4e93a915bcbc0ecb6dc3e5be0bac5a5dbd863de23bbfaf56609349139df7c58"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/Q3_通信保障.csv",
+      "sha256": "62f7fa93b57bfd94f06c078cc87eddfd1d10bb17d0b602930f9d9f5c61b439ab"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/report.html",
+      "sha256": "492e013a94b9718e24fb013129bf4d5aff89f9dc5e914f2367da729b0c95428e"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/search_history.json",
+      "sha256": "1604ad93e75189e70fa4e67fb0d981bec43d7f5f5150a100b8b84cf41caa4bad"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/solution.json",
+      "sha256": "a73aa456a0b4d885637c0077618b1589708cb7e08a1d69bfb85be8397da3b13e"
+    },
+    {
+      "path": "Group/Lcn/Results/Q3/validation.json",
+      "sha256": "6daaf799d466a908daa377bac12c112ea5405186cd62a8eb105d707e6bbc722c"
+    }
+  ],
+  "checks": [
+    "80 boxes exactly once",
+    "all hard deadlines",
+    "independent time and energy reconstruction",
+    "airframe/battery/component conflicts including recharge",
+    "2 s radio sampling plus continuous interval certificates",
+    "input and code hashes unchanged"
+  ],
+  "result": "Implementation and supplied finite scenario verified under the stated numerical and raster conventions; bounded heuristic schedule.",
+  "residual_risks": [
+    "Finite relay grid and bounded route/search family",
+    "Physical energy assumptions supplement incomplete annex equations",
+    "Local affine geographic approximation"
+  ],
+  "input_sha256": {
+    "nodes": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "boxes": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "types": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "relay": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+    "links": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81",
+    "problem": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685",
+    "dem": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+  },
+  "code_sha256": {
+    "Group/Lcn/Code/q3/data.py": "15b0fede5e7654a19c5461798198484ec12cb50ec25096758253becf79717b85",
+    "Group/Lcn/Code/q3/physics.py": "c43df11b71d0d34f0e450eb5895929ca2647511b36b5ede82469141026992287",
+    "Group/Lcn/Code/q3/refine.py": "88d47dde963c925f0d6b954c2e177e6c79861e6951137c8ed66a950e70bcbf71",
+    "Group/Lcn/Code/q3/report.py": "07f1f5b5bf041616f9fe8eaec2879ec19b4971612e99c4344f4ea6186beb4a29",
+    "Group/Lcn/Code/q3/solver.py": "a7467ae7ed16c26405267eefae57d083ced1a0cb52240fe1875aba6acbf6eb88",
+    "Group/Lcn/Code/q3/test_physics.py": "480ad150106570de78fbadae121871318f51d77c7604262fd2453a359aff8ed3",
+    "Group/Lcn/Code/q3/test_verify.py": "40b99f04af6e4fed111407476fc06a1048f80d1999ddcb1f10ec2aba2195244c",
+    "Group/Lcn/Code/q3/verify.py": "058b473eb6921da4c2b4cda1d59d9bc1c837b68bdc66fd56a88e5e6141586cb3",
+    "Group/Lcn/Code/run_q3.py": "f383e0656b873c4f7290298c903e729f12fc8dcf8eaa35dde76933c6b2d6d9d0"
+  }
+}

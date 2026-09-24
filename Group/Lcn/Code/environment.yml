@@ -1,0 +1,14 @@
+name: lcn-q3
+channels:
+  - defaults
+dependencies:
+  - python=3.14
+  - numpy=2.4.6
+  - scipy=1.18.0
+  - matplotlib=3.11.0
+  - openpyxl=3.1.5
+  - pillow=12.3.0
+  - pip
+  - pip:
+      - rasterio==1.5.1
+      - ortools==9.15.6755
