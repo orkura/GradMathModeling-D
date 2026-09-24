@@ -1,0 +1,4034 @@
+{
+  "baseline": {
+    "passed": true,
+    "checks": 390,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "reserve_0.10": {
+    "passed": true,
+    "checks": 389,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "reserve_0.15": {
+    "passed": true,
+    "checks": 389,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "reserve_0.20": {
+    "passed": true,
+    "checks": 390,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "reserve_0.25": {
+    "passed": true,
+    "checks": 404,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.094925894390618,
+            "dp_value": 8.094925894390618,
+            "gap": 0.0,
+            "bound": 8.094925894390618,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4090.700315971374,
+            "dp_value": 4090.700315971375,
+            "gap": 0.0,
+            "bound": 4090.700315971374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "reserve_0.30": {
+    "passed": true,
+    "checks": 418,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 10.41947011184876,
+            "dp_value": 10.41947011184876,
+            "gap": 0.0,
+            "bound": 10.419470111848758,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3951.6177797066607,
+            "dp_value": 3951.617779706661,
+            "gap": 0.0,
+            "bound": 3951.6177797066607,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 10.496194084988602,
+            "dp_value": 10.496194084988602,
+            "gap": 0.0,
+            "bound": 10.496194084988602,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4607.979644595572,
+            "dp_value": 4607.979644595572,
+            "gap": 0.0,
+            "bound": 4607.979644595572,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.094925894390618,
+            "dp_value": 8.094925894390618,
+            "gap": 0.0,
+            "bound": 8.094925894390618,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4090.700315971374,
+            "dp_value": 4090.700315971375,
+            "gap": 0.0,
+            "bound": 4090.700315971374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.052688246775896,
+            "dp_value": 8.052688246775896,
+            "gap": 0.0,
+            "bound": 8.052688246775896,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3969.5332129417134,
+            "dp_value": 3969.533212941713,
+            "gap": 0.0,
+            "bound": 3969.5332129417134,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "sorties_first": {
+    "passed": true,
+    "checks": 390,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.317190025901,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "energy_first": {
+    "passed": true,
+    "checks": 399,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 0.0,
+            "bound": 5.913133523465637,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.3171900259013,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 1.9999999957000407,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 1.9999999957451147,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 5.738586628859506,
+            "dp_value": 5.738586628859508,
+            "gap": 0.0,
+            "bound": 5.738586628859506,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 3863.6634355165834,
+            "dp_value": 3863.663435516583,
+            "gap": 0.0,
+            "bound": 3863.6634355165834,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  },
+  "time_first": {
+    "passed": true,
+    "checks": 390,
+    "errors": [],
+    "milp_certificates": [
+      {
+        "node": "S001",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 3186.3172028819035,
+            "dp_value": 3186.3172028819035,
+            "gap": 0.0,
+            "bound": 3186.3172028819035,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.913133523465637,
+            "dp_value": 5.913133523465637,
+            "gap": 5.041609248113564e-12,
+            "bound": 5.9131335234358255,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S002",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 3858.499694989864,
+            "dp_value": 3858.499694989864,
+            "gap": 0.0,
+            "bound": 3858.499694989864,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.434551639050012,
+            "dp_value": 8.434551639050012,
+            "gap": 0.0,
+            "bound": 8.434551639050012,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S003",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 4450.411598534374,
+            "dp_value": 4450.411598534374,
+            "gap": 0.0,
+            "bound": 4450.411598534374,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 2.0,
+            "dp_value": 2,
+            "gap": 0.0,
+            "bound": 2.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 8.543875833334548,
+            "dp_value": 8.543875833334548,
+            "gap": 0.0,
+            "bound": 8.543875833334548,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S004",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 2301.056685695648,
+            "dp_value": 2301.0566856956484,
+            "gap": 0.0,
+            "bound": 2301.056685695648,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 6.152871556373783,
+            "dp_value": 6.152871556373783,
+            "gap": 0.0,
+            "bound": 6.152871556373783,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S005",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1877.1913401689962,
+            "dp_value": 1877.1913401689962,
+            "gap": 0.0,
+            "bound": 1877.1913401689962,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 4.222152621988057,
+            "dp_value": 4.222152621988057,
+            "gap": 0.0,
+            "bound": 4.222152621988057,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S006",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1561.4444768005903,
+            "dp_value": 1561.44447680059,
+            "gap": 0.0,
+            "bound": 1561.4444768005903,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.597307986725557,
+            "dp_value": 2.597307986725557,
+            "gap": 0.0,
+            "bound": 2.597307986725557,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S007",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1907.4875152738377,
+            "dp_value": 1907.4875152738375,
+            "gap": 0.0,
+            "bound": 1907.4875152738377,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 3.4104046513903503,
+            "dp_value": 3.41040465139035,
+            "gap": 0.0,
+            "bound": 3.4104046513903503,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S008",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 2199.7014951834217,
+            "dp_value": 2199.7014951834217,
+            "gap": 0.0,
+            "bound": 2199.7014951834217,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 5.835967575285361,
+            "dp_value": 5.83596757528536,
+            "gap": 0.0,
+            "bound": 5.835967575285361,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S009",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1558.4316628081292,
+            "dp_value": 1558.4316628081292,
+            "gap": 0.0,
+            "bound": 1558.4316628081292,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.0961823699532536,
+            "dp_value": 2.0961823699532536,
+            "gap": 0.0,
+            "bound": 2.0961823699532536,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S010",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1555.251496079088,
+            "dp_value": 1555.251496079088,
+            "gap": 0.0,
+            "bound": 1555.251496079088,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8228120071262583,
+            "dp_value": 1.8228120071262586,
+            "gap": 0.0,
+            "bound": 1.8228120071262583,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S011",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1188.412098141895,
+            "dp_value": 1188.412098141895,
+            "gap": 0.0,
+            "bound": 1188.412098141895,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.0739029837430394,
+            "dp_value": 1.0739029837430392,
+            "gap": 0.0,
+            "bound": 1.0739029837430394,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S012",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1922.696825046568,
+            "dp_value": 1922.6968250465682,
+            "gap": 0.0,
+            "bound": 1922.696825046568,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.7522540344454174,
+            "dp_value": 2.7522540344454174,
+            "gap": 0.0,
+            "bound": 2.7522540344454174,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S013",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1510.3914040230757,
+            "dp_value": 1510.3914040230757,
+            "gap": 0.0,
+            "bound": 1510.3914040230757,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 1.8245083621157092,
+            "dp_value": 1.8245083621157092,
+            "gap": 0.0,
+            "bound": 1.8245083621157092,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S014",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1869.5644307417988,
+            "dp_value": 1869.5644307417988,
+            "gap": 0.0,
+            "bound": 1869.5644307417988,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.13980333786708,
+            "dp_value": 2.13980333786708,
+            "gap": 0.0,
+            "bound": 2.13980333786708,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      {
+        "node": "S015",
+        "phases": [
+          {
+            "component": 2,
+            "optimum": 1828.2416300672203,
+            "dp_value": 1828.2416300672203,
+            "gap": 0.0,
+            "bound": 1828.2416300672203,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 0,
+            "optimum": 1.0,
+            "dp_value": 1,
+            "gap": 0.0,
+            "bound": 1.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "component": 1,
+            "optimum": 2.3072998332833645,
+            "dp_value": 2.3072998332833645,
+            "gap": 0.0,
+            "bound": 2.3072998332833645,
+            "status": "OPTIMAL"
+          }
+        ]
+      }
+    ],
+    "scope": "Exhaustive finite pattern model; float64 physics, numerical MILP optimality",
+    "tolerance": {
+      "energy_kwh": 2e-06,
+      "time_s": 0.0002,
+      "geometry_m": 1e-05
+    }
+  }
+}

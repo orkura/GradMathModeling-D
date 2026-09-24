@@ -1,8 +1,91 @@
 % !TEX root = ../../../MathModel.tex
-% 负责人：待团队认领。
-% 给出求解流程、参数、各机型安全载荷、组批方案及架次、能耗与作业时间。
-% 报告安全余量变化的影响，可交叉引用第六章的灵敏度分析。
+% 负责人：罗财能。
 \subsubsection{模型求解}
 \label{sec:q1:solution}
 
-待撰写。
+\textbf{（1）精确计数状态动态规划。}
+以$\mathbf s=(s_k)_{k\in K_i}$表示待配送的各类箱数，$0\le s_k\le n_{ik}$。
+令$F_i(\mathbf s)$为完成这些货箱的最优词典序成本，$\mathbf a_{igp}$为模式的计数向量，递推为
+\begin{equation}
+ \begin{aligned}
+ F_i(\mathbf0)&=(0,0,0),\\
+ F_i(\mathbf s)&=\min_{\mathrm{lex}}\left\{
+ F_i(\mathbf s-\mathbf a_{igp})+
+ \big(1,e_{ig}(q_{igp}),t_{ig}(n_{igp})\big):\mathbf a_{igp}\le\mathbf s
+ \right\}.
+ \end{aligned}
+ \label{eq:q1:dp}
+\end{equation}
+不可能达到的状态成本记为无穷大，保存最优模式和前驱状态，并从$F_i(\mathbf n_i)$回溯。
+任取非空最优方案中的最后一个模式，删除该模式后，剩余部分必须是对应前驱状态的最优方案，否则可以替换并改善整体目标。
+按剩余箱数归纳，式\eqref{eq:q1:dp}遍历全部可行最后模式，故能得到该区最优解。
+不同服务区的可行域互相独立，三个目标均可加，合并局部词典序最优解即得整体词典序最优解。
+若区$i$的状态数为$S_i=\prod_{k\in K_i}(n_{ik}+1)$、模式数为$P_i$，时间复杂度为$O(S_iP_i|K_i|)$；本次不截断模式或状态。
+该最优性针对本文确定的有限组批与物理模型；程序使用双精度浮点，比较能耗与时间的平局容差分别为$10^{-9}$\,kWh与$10^{-6}$\,s。
+
+\textbf{（2）安全载荷与基准组批。}
+基准返航余量取20\%，45组机型--航线安全载荷如表\ref{tab:q1:capacity}。
+A型均达到额定25\,kg；B型仅在S008受能量约束，安全载荷降至28.802\,kg。
+C型在S002、S003、S004、S008和S012均不能按额定80\,kg装载，其中S008仅允许58.905\,kg，较额定值减少约26.4\%。
+这一差异说明额定载重不能直接替代山区航线的安全载荷。
+\input{../Results/Q1/table_capacity}
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.95\textwidth]{../Results/Q1/01_safe_payload.pdf}
+ \caption{20\%返航余量下各机型的单点往返安全载荷}
+ \label{fig:q1:capacity}
+\end{figure}
+
+全部80箱以18架次交付，总能耗59.127028\,kWh，累计作业时间32775.100\,s，最低返航SOC为23.0891\%，见表\ref{tab:q1:baseline}。
+S001采用两架次C型，载重分别为76\,kg与78\,kg；S002、S003各采用一架次C型和一架次B型；其余服务区均单架次完成，见表\ref{tab:q1:batches}。
+这些是机型使用架次，不是同时投入的实体无人机数量。
+C型合计运送533\,kg，B型运送225\,kg；A型可飞达各服务区，但未出现在本次目标顺序下的最优组批中。
+S004的C型架次能耗为6.152872\,kWh，其返航SOC最低，仍高于规定下限约3.09个百分点。
+\input{../Results/Q1/table_baseline}
+\input{../Results/Q1/table_batches}
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.95\textwidth]{../Results/Q1/02_return_soc.pdf}
+ \caption{18架次方案的返航电量比例；绿色为B型，橙色为C型}
+ \label{fig:q1:soc}
+\end{figure}
+
+\textbf{（3）能耗是否偏高的定量判断。}\par\nopagebreak
+
+基准能耗中水平飞行占56.572162\,kWh，爬升占2.554866\,kWh。
+这表示任务飞行消耗，不包含充电损耗，也不把返航保留电量当作已消耗能量。
+仅从单个总能耗数字无法判断方案是否浪费，应与相同物理模型下的最低能耗方案比较。
+表\ref{tab:q1:priorities}给出了全量模式下三种优先关系的求解结果。
+能耗优先时使用19架次，得到59.029647\,kWh，相比18架次方案只节约0.097381\,kWh，即约0.165\%，却增加约27.73\,min累计作业时间。
+时间优先得到与基准相同的三项指标。
+因此基准方案已经接近本模型的最低能耗，采用架次优先具有明确的数值支持；不能把基准称为不附加架次限制的能耗最小解。
+\input{../Results/Q1/table_priorities}
+
+\textbf{（4）返航余量敏感性。}
+分别在10\%、15\%、20\%、25\%、30\%下重新计算全部安全载荷、候选模式及最优组批，结果见表\ref{tab:q1:sensitivity}和图\ref{fig:q1:sensitivity}。
+前三个情景均为18架次、59.127028\,kWh；余量升至25\%后为19架次、61.069083\,kWh，升至30\%后为20架次、67.223040\,kWh。
+余量提高使安全载荷收缩，原来可合并的货箱可能需要拆为多个完整货箱批次，从而形成离散的架次与能耗增长。
+程序同时输出各余量下全部45组安全载荷，便于逐机型分析。
+图中连线只连接已测试点，25\%不是精确的换批临界值。
+\input{../Results/Q1/table_sensitivity}
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.95\textwidth]{../Results/Q1/03_reserve_sensitivity.pdf}
+ \caption{返航安全余量变化对最优架次与能耗的影响}
+ \label{fig:q1:sensitivity}
+\end{figure}
+
+\textbf{（5）独立核验与复现边界。}
+验证器不调用求解器的航线或能耗函数，而是在航线包围矩形内逐像元进行线段相交检验，独立重建最高地形及能耗、时间和SOC。
+同时检查箱号全覆盖且不重复、目的地、载重、舱容、45组安全载荷边界及汇总指标。
+另行枚举模式并构造整数规划，使用HiGHS按三层目标依次求解，核对各区动态规划目标值；所有基准、余量和优先级情景均通过。
+整数规划各阶段的最优状态属于数值计算证据，能耗及时间交叉比较容差分别为$2\times10^{-6}$\,kWh与$2\times10^{-4}$\,s。
+8项测试覆盖优先级变化、空需求、不可行需求及箱号、能耗、地形和候选遗漏的错误检测。
+
+复现入口为\path{Group/Lcn/Code/run_q1.py}，结果保存在\path{Group/Lcn/Results/Q1/}。
+其中\texttt{Q1\_单点组批.csv}按题目模板保留9列，并给出每架次原始货箱编号；完整模式、替代方案、核验记录与输入输出指纹分别保存在JSON文件。
+参考稿报告59.036497\,kWh；本次采用沿线全部DEM像元及统一距离、重力口径重算后增加约0.091\,kWh（0.153\%），不直接沿用参考数值或其未提供源码的MATLAB核验声明。
+上述结论仅适用于直线往返、分片常值DEM和确定性能耗模型，尚不包含风雨、亚像元障碍物与设备老化的影响。
