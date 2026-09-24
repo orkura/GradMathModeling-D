@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "claim_id": "Q2_SUPPLIED_INSTANCE_TRANSPORT_FEASIBLE_SCHEDULE",
+  "repository": {
+    "commit": "87da88d37c307f678fb808e37e04f9d885f04b2c",
+    "dirty": true
+  },
+  "command": "F:\\Project\\GradMathModeling-D\\Group\\Lcn\\.venv\\python.exe Group/Lcn/Code/run_q2.py --starts 48 --refine-seconds 120",
+  "environment": {
+    "software": [
+      "Python 3.14.6",
+      "numpy 2.4.6",
+      "rasterio 1.5.1",
+      "matplotlib 3.11.0",
+      "openpyxl 3.1.5",
+      "ortools 9.15.6755"
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Each supplied box is delivered once, respecting payload, volume, return SOC, hard deadlines and actual airframe/battery inventory with full recharge.",
+    "coefficient_domain": "IEEE-754 float64 physical calculation; time tolerance 1e-5s, energy tolerance 1e-6kWh; strict half-open resource comparisons. Conservative integer-second CP-SAT scheduling.",
+    "conventions": "m,s,kg,kWh; shared appendix-2 supplemental energy formula; local affine WGS84 and original piecewise-constant DEM; no radio constraints.",
+    "inputs": [
+      "D题/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/通信链路参数.xlsx",
+      "D题/山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "D题/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif",
+      "D题/结果提交模板.xlsx"
+    ],
+    "bounds": {
+      "starts": 48,
+      "seed": 20260924,
+      "max_stops": 3,
+      "neighbors": 4,
+      "greedy_batch_prefixes": true,
+      "retained_ranked_plans": 32,
+      "all_single_stop_candidates_retained": true,
+      "refinement_total_seconds": 120.0,
+      "cached_plan_count": 85999,
+      "global_optimality_proven": false,
+      "objective_order": [
+        "weighted_tardiness",
+        "makespan_s",
+        "total_energy_kwh",
+        "transport_sorties"
+      ],
+      "communication_constraints": false
+    },
+    "non_claims": [
+      "No global joint optimum of batching, routing, energy and makespan",
+      "No radio feasibility guarantee in Q2",
+      "No real-weather or subpixel terrain certificate"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random; single-worker CP-SAT",
+    "seed": 20260924
+  },
+  "run": {
+    "started_at": "2026-09-24T10:51:20.632027+00:00",
+    "runtime_seconds": 8.83128299999953,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "Group/Lcn/Results/Q2/01_transport_routes.pdf",
+      "sha256": "5ff916cbab6c5afaeae546f928e8cfbed326ee21df291417b5aa5bdca646bd5e"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/01_transport_routes.png",
+      "sha256": "9312bbb8e5ae60b82279551f3c557251ddc03b667c2d483024dc6d54ed03cfdc"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/02_resource_schedule.pdf",
+      "sha256": "122e648c5bbf4c99c6478f9b356308d0738c9b93f96028b5c43e16ccd6c8f09b"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/02_resource_schedule.png",
+      "sha256": "2394d279abeb83408e278a5e94c75b2726015d358b53aae0d9199470e4559d2a"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/03_delivery_performance.pdf",
+      "sha256": "a82154df28112c39cbb39d25df1e36d4aa8aead5aaedaead0e996b2753c77263"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/03_delivery_performance.png",
+      "sha256": "0d1efd9af8b11dd8062aeab1f644c2e748169ec7ee23b87307e7f9bb39c23f1c"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/04_candidate_tradeoff.pdf",
+      "sha256": "b5eadebf441bc13cf886e9afd797a6e7f15b9bab35a437fbaa8165330c790e47"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/04_candidate_tradeoff.png",
+      "sha256": "6dfd18761a07fe1eb8067d5737e414cc92d40cf741302cb8485f04f5a99dc604"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/Q2_候选比较.csv",
+      "sha256": "e87ee1dbe6d433da62dac9356e3211d7c6c76d417f5b0399791e1ad8681b1069"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/Q2_资源占用.csv",
+      "sha256": "00a89022d2708943c95efbf0bc38b8ce5a88d7808f481ce026b6fae06433c7b7"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/Q2_运输架次.csv",
+      "sha256": "9df8642d17b5d2a80a06e8fe7c7edaa621d7ae08af59424ceb5211823fca96f4"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/Q2_逐箱交付.csv",
+      "sha256": "97c2af6b58c2af26cc4dd589f110f34fda59ce405b1be6031151790b03c005ff"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/report.md",
+      "sha256": "e5e03ea63fc910b42be54846516117573768f1ade84f299ce6f627ce32635f38"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/search_history.json",
+      "sha256": "312b95b90807db0d3937f63b2150580547cd9a8092fdd5693f27943c39200e91"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/solution.json",
+      "sha256": "496c40637b7057dde9ed2677772abd3f17d0504331b6aa5e237726f947832b42"
+    },
+    {
+      "path": "Group/Lcn/Results/Q2/validation.json",
+      "sha256": "6308e7b37223f112c34f1c49f777c50db85134c98fb56e7ece6ffd1787c6379a"
+    }
+  ],
+  "checks": [
+    "Independent per-leg load, DEM, time, energy and SOC reconstruction",
+    "Exact box coverage and medical/first-delivery deadlines",
+    "Same-type entity inventory and nonoverlap including recharge",
+    "Summary metrics independently recomputed",
+    "JSON round-trip audit",
+    "Inputs and implementation unchanged during execution"
+  ],
+  "result": "Feasible supplied transport instance verified by 2075 independent checks with zero errors; bounded search, not a full-problem optimum proof.",
+  "residual_risks": [
+    "Greedy packing and bounded route family",
+    "CP-SAT wall-clock limits can change incumbents across environments",
+    "Shared physical assumptions inherit the stated energy and DEM conventions",
+    "Legacy manifest v1 lacks machine-enforced resource caps"
+  ],
+  "input_sha256": {
+    "D题/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D题/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D题/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D题/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+    "D题/数据/无人机应急物资运输基础数据/通信链路参数.xlsx": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81",
+    "D题/山区洪涝灾害下无人机运输与通信协同优化.docx": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685",
+    "D题/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "D题/结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+  },
+  "code_sha256": {
+    "Group/Lcn/Code/run_q2.py": "c9d4195f995a24d44bc100cf44c6836c0e3062ca1e05962a58a6a3979da0b767",
+    "Group/Lcn/Code/q2/refine.py": "fba15c4ea3f34547962e1ba1168b05034c2c73230303bd91e415196f6d4f6beb",
+    "Group/Lcn/Code/q2/report.py": "a517c44355813f3d328b6a3bb811c045efe4950fca565c954bc2da49b5836493",
+    "Group/Lcn/Code/q2/solver.py": "87e752e32769ab3ac110b5324e9806a3101a95a67914750953a057dd18bdf50e",
+    "Group/Lcn/Code/q2/test_q2.py": "ceb7f0f508c201b65981fbe72a2edf06f64049ecafead39d768c76c3557ac6f5",
+    "Group/Lcn/Code/q2/verify.py": "93ab03ef03b228b6084007ba32973bc57a77dc63843704c03739533957478c37",
+    "Group/Lcn/Code/q3/data.py": "15b0fede5e7654a19c5461798198484ec12cb50ec25096758253becf79717b85",
+    "Group/Lcn/Code/q3/physics.py": "c43df11b71d0d34f0e450eb5895929ca2647511b36b5ede82469141026992287",
+    "Group/Lcn/Code/q3/solver.py": "a7467ae7ed16c26405267eefae57d083ced1a0cb52240fe1875aba6acbf6eb88"
+  }
+}

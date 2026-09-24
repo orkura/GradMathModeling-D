@@ -1,7 +1,56 @@
 % !TEX root = ../../../MathModel.tex
-% 负责人：待团队认领。
-% 引用公共物理计算，补充实体无人机、电池、充电周转与物资时限数据。
+% 负责人：罗财能。
 \subsubsection{模型准备}
 \label{sec:q2:preparation}
 
-待撰写。
+\textbf{（1）数据与符号。}
+使用附件的调度中心与服务区、逐箱需求与时限、运输无人机参数，以及原始30米DEM。
+共有15个服务区、80个不可拆货箱，总质量758\,kg，总体积2.011\,m$^3$。
+医疗箱与首批保障箱取并集后，共31箱具有硬性时限。
+运输机及共享电池参数见表\ref{tab:q2:inventory}，电池总数已包括初始安装与备用电池，不能再把机体数量加到电池库存上。
+
+\begin{table}[htbp]
+  \centering
+  \caption{第二题的运输机与共享电池参数}
+  \label{tab:q2:inventory}
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    机型 & 机体数 & 电池数 & 载质量（kg） & 容积（m$^3$） & 能量（kWh） & 全充时长（s） \\
+    \midrule
+    A & 4 & 6 & 25 & 0.060 & 4.5 & 1800 \\
+    B & 2 & 4 & 30 & 0.073 & 4.0 & 2400 \\
+    C & 2 & 4 & 80 & 0.250 & 8.0 & 3000 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+记$\mathcal B$为货箱集合，$\mathcal P$为选用的非空运输架次集合，$g(p)$为架次$p$的机型。
+货箱$b$的质量、体积、应急优先系数和期望送达时刻分别记为$m_b,v_b,w_b,d_b$。
+硬截止时刻$h_b$取其适用的医疗期望时刻与首批截止时刻的较小者；无硬期限的货箱取$h_b=+\infty$。
+各架次准备开始、起飞和返航时刻分别为$s_p,o_p,R_p$，货箱交付完成时刻为$C_b$。
+内部统一使用米、秒、千克和kWh，图表所示分钟由秒换算。
+
+\textbf{（2）逐航段物理计算。}
+将经纬度转为研究区附近的WGS84局部仿射米制坐标，遍历水平直线航段穿过的全部DEM像元。
+记沿线最高海拔为$H^{\rm DEM}_{ij}$，水平距离为$d_{ij}$，起止作业海拔为$z_i^{\rm op},z_j^{\rm op}$。
+O01作业高度取附件地面海拔，服务区取附件海拔加30\,m。
+为保证非负爬升与下降高度，采用
+\begin{align}
+ H_{ij}&=\max\{H^{\rm DEM}_{ij}+50,z_i^{\rm op},z_j^{\rm op}\},\notag\\
+ t_{gij}&=\frac{H_{ij}-z_i^{\rm op}}{v_g^{\uparrow}}
+       +\frac{d_{ij}}{v_g^{\rm c}}
+       +\frac{H_{ij}-z_j^{\rm op}}{v_g^{\downarrow}}.
+ \label{eq:q2:flight}
+\end{align}
+这里$v_g^{\uparrow},v_g^{\rm c},v_g^{\downarrow}$分别为爬升、巡航和下降速度。
+载荷为$q$时，等效航程与补充能耗计算为
+\begin{align}
+ L_g(q)&=L_g^0-(L_g^0-L_g^F)(q/Q_g)^{3/2},\notag\\
+ E_{gij}(q)&=E_g^{\rm use}\frac{d_{ij}}{L_g(q)}
+  +\frac{(m_g+q)g_0(H_{ij}-z_i^{\rm op})}{\eta_g^{\uparrow}\,3.6\times10^6}.
+ \label{eq:q2:energy}
+\end{align}
+其中$Q_g$为最大载质量，$L_g^0,L_g^F$为空载与满载等效航程，$m_g$为附件空机质量，$E_g^{\rm use}$为满电可用能量，$g_0=9.80665$\,m/s$^2$。
+题目给出能耗分解，但未完整展开水平和爬升能耗，上式为与第三题保持一致的补充口径。
+下降效率给定为0，故不额外计下降能耗；运输交接未给悬停功率，也不另加该项能耗。
+每站卸货后按剩余质量重算后续航段，最后空载返航。
