@@ -1,0 +1,38 @@
+% !TEX root = MathModel.tex
+% 公共排版与命令由整合人员维护，正文文件不重复加载宏包。
+\hypersetup{hidelinks}
+% 模板的编号间距只用于排版，不写入 PDF 书签。
+\pdfstringdefDisableCommands{\def\thinskip{}}
+% 当前模板的封面条件缺少 \fi，在正式工程内修补并保留模板原文件。
+% 更换 gmcmthesis.cls 版本时应重新核对该补丁。
+\makeatletter
+\patchcmd{\ge@maketitle}{\makenametitle}{\fi\makenametitle}{}{%
+  \PackageError{paper}{Cover patch failed}{Check the gmcmthesis class version.}%
+}
+\makeatother
+\usepackage{subfig}
+\usepackage{siunitx}
+\usepackage{colortbl}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithmicx,algorithm}
+\floatname{algorithm}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+
+% 保留三级标题：一、 / 1.1 / 1.1.1，并在目录中展示。
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\renewcommand{\thesection}{\chinese{section}、}
+\setlength{\cftsecnumwidth}{3em}
+\setlength{\cftsubsecnumwidth}{3em}
+\setlength{\cftsubsubsecnumwidth}{4em}
+
+% 一级标题使用中文编号，公式和图表仍使用阿拉伯数字编号。
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+
+% 初始骨架只显示参考文献占位，不引用 reference.bib 中的模板示例。
+% 写入真实条目并在正文使用 \cite 后，将 false 改为 true。
+\newif\ifpaperbibliography
+\paperbibliographyfalse

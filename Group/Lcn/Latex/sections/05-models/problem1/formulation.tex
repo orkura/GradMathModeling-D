@@ -1,0 +1,74 @@
+% !TEX root = ../../../MathModel.tex
+% 负责人：罗财能。
+\subsubsection{模型建立}
+\label{sec:q1:formulation}
+
+\textbf{（1）往返能耗与安全载荷。}
+对机型$g$，记最大载重、舱容、可用电量和空机质量分别为$Q_g,V_g,B_g,m_g$，空载与满载等效航程分别为$L_{g,0},L_{g,F}$。
+携带质量$q\in[0,Q_g]$时，等效航程为
+\begin{equation}
+ L_g(q)=L_{g,0}-(L_{g,0}-L_{g,F})\left(\frac{q}{Q_g}\right)^{3/2}.
+ \label{eq:q1:range}
+\end{equation}
+以$\eta_g^{\uparrow}$表示爬升效率，则单点往返能耗为
+\begin{equation}
+ e_{ig}(q)=B_gd_i\left(\frac{1}{L_g(q)}+\frac{1}{L_g(0)}\right)
+ +\frac{g_0\big[(m_g+q)u_i+m_gv_i\big]}{3.6\times10^6\eta_g^{\uparrow}}.
+ \label{eq:q1:energy}
+\end{equation}
+分母中的$3.6\times10^6$将焦耳换算为kWh；返程的航程函数及爬升质量均按空载计算。
+返航SOC为$1-e_{ig}(q)/B_g$。
+设要求的返航余量为$\rho$，则安全载荷上界为
+\begin{equation}
+ \bar q_{ig}(\rho)=\max\{q\in[0,Q_g]:e_{ig}(q)\le(1-\rho)B_g\}.
+ \label{eq:q1:payload}
+\end{equation}
+若空载往返已超出能量预算，标记该机型在该航线不可用；若满载可行，则$\bar q_{ig}=Q_g$。
+其余情况下，因$L_g(q)$随$q$不增、爬升项随$q$增加，$e_{ig}(q)$单调不减，可在$[0,Q_g]$上二分70次获得安全侧边界。
+安全载荷是质量能力上限；实际组批仍须另行检查舱容。
+
+\textbf{（2）累计作业时间。}
+记巡航、爬升和下降速度为$s_g^c,s_g^u,s_g^d$，固定准备、每箱装载、固定交接及每箱交接时间分别为$a_g,b_g,c_g,f_g$。
+运送$n$箱的单架次作业时长为
+\begin{equation}
+ t_{ig}(n)=\frac{2d_i}{s_g^c}+(u_i+v_i)\left(\frac{1}{s_g^u}+\frac{1}{s_g^d}\right)
+ +a_g+nb_g+c_g+nf_g.
+ \label{eq:q1:time}
+\end{equation}
+该量包括准备、装载、往返飞行和服务区交接，不包含充电或等待其他资源释放的时间。
+
+\textbf{（3）不可拆货箱的组批。}
+令$K_i$为服务区$i$的等价货箱类别集合，$n_{ik}$、$w_{ik}$和$u_{ik}$分别为类别$k$的需求箱数、单箱质量与体积。
+对该区机型$g$的模式$p$，以整数$a_{igpk}$表示装入类别$k$的箱数，且$0\le a_{igpk}\le n_{ik}$。
+枚举所有非空计数组合，保留满足
+\begin{equation}
+ \begin{aligned}
+ q_{igp}&=\sum_{k\in K_i}a_{igpk}w_{ik}\le Q_g,\\
+ V_{igp}&=\sum_{k\in K_i}a_{igpk}u_{ik}\le V_g,\\
+ e_{ig}(q_{igp})&\le(1-\rho)B_g
+ \end{aligned}
+ \label{eq:q1:pattern}
+\end{equation}
+的模式，形成集合$\mathcal P_{ig}$。
+令模式使用次数$x_{igp}\in\mathbb Z_{\ge0}$，则完整交付约束为
+\begin{equation}
+ \sum_g\sum_{p\in\mathcal P_{ig}}a_{igpk}x_{igp}=n_{ik},
+ \qquad i\in I,\ k\in K_i.
+ \label{eq:q1:cover}
+\end{equation}
+逐类等式保证数量既不遗漏也不重复；将互不重复的原始箱号回填至模式后，即得到逐箱执行清单。
+每个模式只包含一个服务区，故不会出现跨区混装。
+
+\textbf{（4）目标优先关系。}
+记模式箱数$n_{igp}=\sum_k a_{igpk}$，则
+\begin{equation}
+ \min_{\mathrm{lex}}(N,E,T),\qquad
+ \begin{cases}
+ N=\sum_{i,g,p}x_{igp},\\
+ E=\sum_{i,g,p}e_{ig}(q_{igp})x_{igp},\\
+ T=\sum_{i,g,p}t_{ig}(n_{igp})x_{igp}.
+ \end{cases}
+ \label{eq:q1:objective}
+\end{equation}
+能耗改善不能抵消架次增加，时间改善也不能抵消前两项目标变差。
+对照实验分别改为$\min_{\mathrm{lex}}(E,N,T)$与$\min_{\mathrm{lex}}(T,N,E)$，保持所有物理约束相同。

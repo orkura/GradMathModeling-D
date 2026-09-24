@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "claim_id": "q1-exhaustive-single-destination-batching",
+  "repository": {
+    "commit": "87da88d37c307f678fb808e37e04f9d885f04b2c",
+    "dirty": true
+  },
+  "command": "Group/Lcn/.venv/python.exe -B Group/Lcn/Code/run_q1.py",
+  "environment": {
+    "software": [
+      "Python 3.14.6",
+      "numpy 2.4.6",
+      "scipy 1.18.0",
+      "rasterio 1.5.1",
+      "matplotlib 3.11.0",
+      "openpyxl 3.1.5"
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0; AMD64; Intel64 Family 6 Model 191 Stepping 2, GenuineIntel"
+  },
+  "mathematics": {
+    "assertion_tested": "Exhaustive count-state DP agrees with independently enumerated lexicographic MILP at each of 15 destinations and satisfies cargo, capacity, reserve and geometry checks.",
+    "coefficient_domain": "Integer cargo counts, grams and cubic centimetres; float64 energy/time/geometry; numerical MILP certificates.",
+    "conventions": "Single destination round trip; empty return; WGS84 local affine metres; all touched DEM cells; 50m cruise clearance; 30m service height; g=9.80665; no descent or hover energy.",
+    "inputs": [
+      {
+        "path": "D题/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+        "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38"
+      },
+      {
+        "path": "D题/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+        "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a"
+      },
+      {
+        "path": "D题/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+        "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb"
+      },
+      {
+        "path": "D题/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx",
+        "sha256": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04"
+      },
+      {
+        "path": "D题/数据/无人机应急物资运输基础数据/通信链路参数.xlsx",
+        "sha256": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81"
+      },
+      {
+        "path": "D题/山区洪涝灾害下无人机运输与通信协同优化.docx",
+        "sha256": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685"
+      },
+      {
+        "path": "D题/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif",
+        "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+      },
+      {
+        "path": "Group/Lcn/Code/run_q1.py",
+        "sha256": "826a0d08727980e3d9af862517ad8e7433bb5057bf30b0b8e4f62c5ce7bf7351"
+      },
+      {
+        "path": "Group/Lcn/Code/q3/data.py",
+        "sha256": "15b0fede5e7654a19c5461798198484ec12cb50ec25096758253becf79717b85"
+      },
+      {
+        "path": "Group/Lcn/Code/q3/physics.py",
+        "sha256": "c43df11b71d0d34f0e450eb5895929ca2647511b36b5ede82469141026992287"
+      },
+      {
+        "path": "Group/Lcn/Code/requirements.txt",
+        "sha256": "1a4bac4bebcb455181d3e5381c3eb7ecc81e5828addeff167bc9032e1e888c81"
+      },
+      {
+        "path": "Group/Lcn/Code/q1/__init__.py",
+        "sha256": "1b2e08b2f6e00a3ae77665516d1ec6da2c89a3e2ba4db641326839c27bdb8b59"
+      },
+      {
+        "path": "Group/Lcn/Code/q1/report.py",
+        "sha256": "c3cb3d1d19afec7a46e28ef36f3fdd0dc3e967d322832f15236f3d2a98519672"
+      },
+      {
+        "path": "Group/Lcn/Code/q1/solver.py",
+        "sha256": "f75f9a06226a78e28f9a2934a583ce43ee427342952da3881dfb3e79392dce21"
+      },
+      {
+        "path": "Group/Lcn/Code/q1/test_q1.py",
+        "sha256": "6fefd50ae93fe7d8d529fe24e6bde36afd4da85a9e77deff85b6d8ccff05c480"
+      },
+      {
+        "path": "Group/Lcn/Code/q1/verify.py",
+        "sha256": "d5e7dac5b901061e55ae3c267e3e5dba2ba456d3b8e27c220291008a301a88cf"
+      }
+    ],
+    "bounds": {
+      "nodes": 15,
+      "boxes": 80,
+      "types": 3,
+      "reserve_levels": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "priority_orders": [
+        "N,E,T",
+        "E,N,T",
+        "T,N,E"
+      ],
+      "candidate_truncation": false,
+      "dp_state_truncation": false,
+      "milp_phase_time_limit_s": 30,
+      "baseline_states": 644,
+      "baseline_patterns": 732
+    },
+    "non_claims": [
+      "No continuous-space real-flight optimality.",
+      "No fleet, battery-turnaround or delivery-deadline scheduling.",
+      "No independent MATLAB reproduction claimed."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "reference_documents": [
+    {
+      "path": "Temp/D题第一问论文正文.md",
+      "sha256": "86fa53878bbf9ca96c39205c59dd1e973fe939cb8b1bf9ce9f412d86c04a31da",
+      "required_for_computation": false
+    }
+  ],
+  "run": {
+    "started_at": "2026-09-24T12:23:54.692562+00:00",
+    "runtime_seconds": 5.632056000002194,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "Group/Lcn/Results/Q1/01_safe_payload.pdf",
+      "sha256": "efaefefd99f51b77ebf135fd64c0eac412d91544f35b6ebb1d4df9cb869263e2"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/01_safe_payload.png",
+      "sha256": "8b02c37b5642f5447b414b760a663227344947366545cf47a8fbba748f99d855"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/02_return_soc.pdf",
+      "sha256": "91ece433429abd6b4d3e589d6f1a832bca789091a1faabb37bbb73a52393e676"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/02_return_soc.png",
+      "sha256": "e6fdbe5cc7a1130ff23c85a096bbc5f565e72d1d551e00deee59d32e730e2a71"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/03_reserve_sensitivity.pdf",
+      "sha256": "96cf24d07444b8eb75d7bb3d5d502f642637ef42fc1c88bb2b09522221141315"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/03_reserve_sensitivity.png",
+      "sha256": "aca16ad8ef79d02e48402b9883d0af084efd86b515358ce0fa3402e28d495a8b"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/priority_comparison.json",
+      "sha256": "526f2d3c54a84509a2ea382e051e964716ed64e60c08218d1c0b674515dfd44e"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/Q1_余量敏感性.csv",
+      "sha256": "cd902f68619a6e1a888480b5a37ce4aadc13dcb08b1cfcc3a493f3ba9b8138cc"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/Q1_单点组批.csv",
+      "sha256": "c74ae4183c331f3c445a89d30fe883cb785c0f729103cecc614eba17ed7d2fc3"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/Q1_安全载荷.csv",
+      "sha256": "736cf537f07d7fdfb77410e640813d0b44861c80679f4d93d034740314e1cab1"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/Q1_目标优先级对照.csv",
+      "sha256": "27c641dd90aa7f5d99bfeda6f7ae6df0a5d59fdb75fae3ca3a1b783367a686c4"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/Q1_航线地形.csv",
+      "sha256": "156d3a260f0db41ba800f7b5ae0ca9991e55911857a7266ad9a36eff23a6d300"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/Q1_逐箱归属.csv",
+      "sha256": "162572a20aa063505630a81546fd5b167a59a0ca4da0b951d45d7734b55b45f6"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/report.md",
+      "sha256": "d9803233c4765c00cc1d932028daff17dae34e69b1e3aac30adfba4ce741f6f9"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/sensitivity.json",
+      "sha256": "c44bfb84ce5439ee06f68cd11c5b99d613ba28b4171f5557689de534241ad619"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/solution.json",
+      "sha256": "6c21fc3236006596d1e2787232e682f18a6f5afeec41b71db433d56b3a3cc8af"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/table_baseline.tex",
+      "sha256": "385e606a5312d41769945afbe228c1f4f75958320374b784b7fd7f2df4b8d72c"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/table_batches.tex",
+      "sha256": "578d5597090d24e4377f507235c41cb5e7b7c5d5495637f99526c13e539b93a3"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/table_capacity.tex",
+      "sha256": "7e8ededf1c0e1f8a7f4e218d4a0a16991ba27321012d3576650915a305f89df6"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/table_priorities.tex",
+      "sha256": "565a94bf17656de7278af59811a7514f7613c7541caff4fd950e38075b147d6e"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/table_sensitivity.tex",
+      "sha256": "8ef02c6834a849fe513d00b4dabf538a7bee60ac60b138cd6d182ff262997149"
+    },
+    {
+      "path": "Group/Lcn/Results/Q1/validation.json",
+      "sha256": "5d7dda28a5abf1c7e197d6a1aee7989c64c1a705ea502585bc5c11f9eb68c382"
+    }
+  ],
+  "checks": [
+    {
+      "name": "baseline",
+      "passed": true,
+      "count": 390
+    },
+    {
+      "name": "reserve_0.10",
+      "passed": true,
+      "count": 389
+    },
+    {
+      "name": "reserve_0.15",
+      "passed": true,
+      "count": 389
+    },
+    {
+      "name": "reserve_0.20",
+      "passed": true,
+      "count": 390
+    },
+    {
+      "name": "reserve_0.25",
+      "passed": true,
+      "count": 404
+    },
+    {
+      "name": "reserve_0.30",
+      "passed": true,
+      "count": 418
+    },
+    {
+      "name": "sorties_first",
+      "passed": true,
+      "count": 390
+    },
+    {
+      "name": "energy_first",
+      "passed": true,
+      "count": 399
+    },
+    {
+      "name": "time_first",
+      "passed": true,
+      "count": 390
+    }
+  ],
+  "result": "Implementation and finite assertion verified within numerical tolerances; {\"sorties\": 18, \"boxes\": 80, \"mass_kg\": 758.0, \"volume_m3\": 2.011, \"energy_kwh\": 59.127028316147424, \"horizontal_kwh\": 56.57216209198088, \"climb_kwh\": 2.5548662241665454, \"cumulative_time_s\": 32775.09955643641, \"min_return_soc\": 0.23089105545327715, \"sorties_by_type\": {\"A\": 0, \"B\": 9, \"C\": 9}}",
+  "residual_risks": [
+    "DEM resolution and deterministic energy model.",
+    "Floating arithmetic and HiGHS feasibility/optimality tolerances.",
+    "Legacy v1 manifest records hashes after the run, not a pre/post mutation guard."
+  ]
+}

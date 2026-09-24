@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "claim_id": "Q4_FIXED_Q3_NO_RELAY_DUPLICATION_PARTITION_OPTIMUM",
+  "repository": {
+    "commit": "90d6f3f7ee63de54d429a1bb89b802d2aed43c20",
+    "dirty": true
+  },
+  "command": "F:\\Project\\GradMathModeling-D\\Group\\Lcn\\.venv\\python.exe .\\Group\\Lcn\\Code\\run_q4.py",
+  "environment": {
+    "software": [
+      "Python 3.14.6",
+      "numpy 2.4.6",
+      "matplotlib 3.11.0",
+      "openpyxl 3.1.5",
+      "rasterio 1.5.1"
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Exhaustive canonical partitions and attainable minimum per-type resources under frozen Q3 tasks, no relay duplication and exchangeable same-type identities.",
+    "coefficient_domain": "Exact integer assignments and counts; inherited IEEE-754 float64 times with strict half-open comparisons and no overlap tolerance.",
+    "conventions": "m,s,kg,kWh; resource occupancy includes full recharge and relay turnaround; workload excludes these post-return periods.",
+    "inputs": [
+      "D题/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx",
+      "D题/数据/无人机应急物资运输基础数据/通信链路参数.xlsx",
+      "D题/山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "D题/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif",
+      "Group/Lcn/Results/Q3/solution.json",
+      "D题/结果提交模板.xlsx"
+    ],
+    "bounds": {
+      "service_areas": 15,
+      "atoms": 6,
+      "groups": [
+        2,
+        3
+      ],
+      "enumerated": {
+        "2": 31,
+        "3": 90
+      },
+      "fixed_q3": true,
+      "relay_duplication": false,
+      "entity_reassignment": true
+    },
+    "non_claims": [
+      "No optimum over alternative Q3 schedules or duplicated relay sorties",
+      "No guarantee of real weather, propagation or subpixel terrain"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-24T09:45:35.092547+00:00",
+    "runtime_seconds": 3.9824622999985877,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "Group/Lcn/Results/Q4/01_partition_maps.pdf",
+      "sha256": "652e05b67cacd0a0fe57593c0db5025023867d566cc4d2364b0779ae20e05d67"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/01_partition_maps.png",
+      "sha256": "a7862608f21687950cc31c682d52487f04c5046906233f91636abcb1597d62e0"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/02_resource_requirements.pdf",
+      "sha256": "cd551b4e175ec3087a42d993736e99ea6a124d5340eed18b10f6a15429f0ee5f"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/02_resource_requirements.png",
+      "sha256": "135af4125e82a963ea206ed47a0195db0b940600042875ac6ac96c2cf668199a"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/03_tradeoff.pdf",
+      "sha256": "dd0710d4b1de1753d408c87cceae8cdaeb12a483edaeec4b8378edba78ad3b3b"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/03_tradeoff.png",
+      "sha256": "f099fc1f25b03801cc72d60b7ee56355ce9dc93872d337d2f9a26f4a6fb3a6ee"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/Q4_候选比较.csv",
+      "sha256": "50c0122eca73e1093bde8eed635fdd997396ab0553ca5b126d58cae9817f6ee4"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/Q4_分区配置.csv",
+      "sha256": "07723aa0343967dd743d0a7ce0d2d47da99a829c161a105b8d7a755c4afc5bc6"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/Q4_均衡对照.csv",
+      "sha256": "fab15728a6d66e144aafc13a0bf54cab54b47ceb40938a78161d57d559b910f9"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/Q4_资源分配.csv",
+      "sha256": "e516581ae8ed610bc63727c6c5751b69fa95879f71d9e2e2e67b96c16ab1bca3"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/Q4_资源比较.csv",
+      "sha256": "382ed8d3e241eba287096df300eeda37774326569b72e9e359d982c9ecbc2d0a"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/report.md",
+      "sha256": "e62f6d83e02b7f0897132c1f7d84ce0fcf408ad98d7d6bddc20fd5e590d52b84"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/solution.json",
+      "sha256": "6f16e6a8b7e65f8302425469f427ae4ebe2f72d43b73ded06d69b304fb712389"
+    },
+    {
+      "path": "Group/Lcn/Results/Q4/validation.json",
+      "sha256": "e55f6036864aa76d925acde8889efc332677e3c89ea324957962c6bb5dccd04d"
+    }
+  ],
+  "checks": [
+    "Fresh Q3 flight and continuous radio audit",
+    "Independent dependency components",
+    "Complete labelled-assignment cross-check of canonical enumeration",
+    "Independent active-at-start interval peaks",
+    "Disjoint entity allocations with recharge",
+    "Resource gaps, workload CV, lexicographic optimum and Pareto frontier",
+    "Inputs and implementation unchanged during execution"
+  ],
+  "result": "Implementation and all 121 partitions verified for the frozen supplied Q3 instance; minimum total type-specific shortages: K=2: 2 units; K=3: 5 units",
+  "residual_risks": [
+    "Task-arrangement interpretation permits relabelling exchangeable same-type entities",
+    "Q3 physical assumptions are inherited; finite partition optimality does not improve the underlying Q3 heuristic"
+  ],
+  "input_sha256": {
+    "D题/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D题/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D题/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D题/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+    "D题/数据/无人机应急物资运输基础数据/通信链路参数.xlsx": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81",
+    "D题/山区洪涝灾害下无人机运输与通信协同优化.docx": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685",
+    "D题/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "Group/Lcn/Results/Q3/solution.json": "a73aa456a0b4d885637c0077618b1589708cb7e08a1d69bfb85be8397da3b13e",
+    "D题/结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+  },
+  "code_sha256": {
+    "Group/Lcn/Code/run_q4.py": "ec71d4e97da64eeeb6dbbcf9540953c52f1aadd6267c83fa56060989a4ffcd0a",
+    "Group/Lcn/Code/q3/data.py": "15b0fede5e7654a19c5461798198484ec12cb50ec25096758253becf79717b85",
+    "Group/Lcn/Code/q3/physics.py": "c43df11b71d0d34f0e450eb5895929ca2647511b36b5ede82469141026992287",
+    "Group/Lcn/Code/q3/refine.py": "88d47dde963c925f0d6b954c2e177e6c79861e6951137c8ed66a950e70bcbf71",
+    "Group/Lcn/Code/q3/report.py": "07f1f5b5bf041616f9fe8eaec2879ec19b4971612e99c4344f4ea6186beb4a29",
+    "Group/Lcn/Code/q3/solver.py": "a7467ae7ed16c26405267eefae57d083ced1a0cb52240fe1875aba6acbf6eb88",
+    "Group/Lcn/Code/q3/test_physics.py": "480ad150106570de78fbadae121871318f51d77c7604262fd2453a359aff8ed3",
+    "Group/Lcn/Code/q3/test_verify.py": "40b99f04af6e4fed111407476fc06a1048f80d1999ddcb1f10ec2aba2195244c",
+    "Group/Lcn/Code/q3/verify.py": "058b473eb6921da4c2b4cda1d59d9bc1c837b68bdc66fd56a88e5e6141586cb3",
+    "Group/Lcn/Code/q4/model.py": "ceba7b52f0c493a0bdcc1fccd8d55cb26db33dba4aac6b4d1a5015cd0b0d1629",
+    "Group/Lcn/Code/q4/report.py": "c299180a716ffa0cd5d2c030061fff004c8647c003790e205da03a91afa082b9",
+    "Group/Lcn/Code/q4/test_q4.py": "6670f77af221bd07117828dac85ae36468043bdd3694f914859206cbcff66948",
+    "Group/Lcn/Code/q4/verify.py": "c9f46a39c30512ad7d967b03545c7bf26df226676c73192ed3b78ff8577cc83d"
+  }
+}

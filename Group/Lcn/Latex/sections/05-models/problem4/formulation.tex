@@ -1,0 +1,73 @@
+% !TEX root = ../../../MathModel.tex
+% 负责人：罗财能。
+\subsubsection{模型建立}
+\label{sec:q4:formulation}
+
+\textbf{（1）原子单元分组。}
+分别取$K=2,3$，本问以$g=1,\ldots,K$表示任务组。
+令$x_{cg}\in\{0,1\}$表示单元$c$是否分配给组$g$，满足
+\begin{equation}
+  \sum_{g=1}^{K}x_{cg}=1\quad(c\in\mathcal C),\qquad
+  \sum_{c\in\mathcal C}x_{cg}\ge1\quad(g=1,\ldots,K).
+  \label{eq:q4:partition}
+\end{equation}
+单元内所有服务区继承同一分组，因此每区恰属一组、每组非空，运输及中继依赖同时得到保持。
+任务$j$的组别由$x_{c(j),g}$确定，无需重新选择路线、任务时刻或保障者。
+
+\textbf{（2）固定区间下的最少资源。}
+设$\mathcal J_m$为占用资源类型$m$的任务集合，$N_{gm}$为组$g$需配置的该类资源数量。
+任意时刻的并发需求必须满足
+\begin{equation}
+  N_{gm}\ge
+  \sum_{j\in\mathcal J_m}x_{c(j),g}
+     \mathbf 1_{\{s_j\le t<e_{jm}\}},\qquad
+  N_{gm}\in\mathbb Z_{\ge0},\quad \forall g,m,t.
+  \label{eq:q4:capacity}
+\end{equation}
+占用状态只在有限端点处变化，故扫描全部开始、结束事件即可精确得到
+\begin{equation}
+  N_{gm}^{*}=\max_t
+  \sum_{j\in\mathcal J_m}x_{c(j),g}
+     \mathbf 1_{\{s_j\le t<e_{jm}\}}.
+  \label{eq:q4:peak}
+\end{equation}
+该峰值既是下界，也可实现：重叠任务不能共用资源，故配置至少等于峰值；反之，按开始时刻依次给任务分配空闲同型资源。
+若峰值为$n$，新任务开始时至多有$n-1$个其他任务仍占用资源，必有一个可用编号。
+由此得到达到下界的区间贪心着色；电池区间已延伸至补满，复用时也满足SOC要求。
+各组采用不同编号前缀，明确禁止跨组共享。
+
+\textbf{（3）缺口、复用损失与均衡。}
+令$N_m=\sum_gN_{gm}^{*}$，区分三项数量：
+\begin{equation}
+  D_m=(N_m-I_m)^+,\qquad
+  S_m=(I_m-N_m)^+,\qquad
+  A_m=N_m-N_m^{\rm pool}\ge0.
+  \label{eq:q4:resource-difference}
+\end{equation}
+这里$D_m$是库存缺口，$S_m$是现有库存余量，$A_m$是取消跨组复用后比共享池多需的配置。
+后一项表示隔离执行的额外配置，不能与库存闲置混称；非负性来自“各组峰值之和不小于合并任务的峰值”。
+库存不作为禁止求解的硬上限，否则无法分析超过库存的方案及其原因；不同类型的余量也不能抵消其他类型的缺口。
+
+组$g$的工作量及变异系数定义为
+\begin{equation}
+  L_g=\sum_{j\in\mathcal J}x_{c(j),g}\ell_j,\qquad
+  \overline L=\frac1K\sum_gL_g,\qquad
+  \operatorname{CV}_L=
+  \frac{\sqrt{K^{-1}\sum_g(L_g-\overline L)^2}}{\overline L}.
+  \label{eq:q4:balance}
+\end{equation}
+中继作业只按其实际架次计一次，不按保障运输机数量重复累加。
+货箱数和质量作为辅助工作量一并报告。
+
+本文选择
+\begin{equation}
+  \operatorname{lexmin}\left(
+     \sum_{m\in\mathcal M}D_m,
+     \sum_{m\in\mathcal M}N_m,
+     \operatorname{CV}_L\right).
+  \label{eq:q4:objective}
+\end{equation}
+即先减少缺口，再减少配置件数，最后改善均衡。
+该顺序由本文选定，各类设备等权计件并不代表采购价格相同。
+同时保留三指标非支配方案和均衡优先方案作为对照，展示配置规模与均衡的取舍。
+由于枚举全部原子单元划分，可在此有限模型内比较全局最优；这一结论仅针对固定问题三方案、不复制中继架次和当前评价准则，不涉及重新优化第三题后的最优分区。

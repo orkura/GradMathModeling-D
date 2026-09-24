@@ -1,0 +1,89 @@
+% !TEX root = ../../../MathModel.tex
+% 负责人：罗财能。
+\subsubsection{模型建立}
+\label{sec:q2:formulation}
+
+\textbf{（1）组批、访问顺序与返航能量。}
+令$x_{bp}\in\{0,1\}$表示货箱$b$由架次$p$运输，$V_g$为机型装载容积上限。
+每个选用架次至少运输一箱，各箱不拆分且恰好运输一次：
+\begin{equation}
+ \sum_{p\in\mathcal P}x_{bp}=1,\qquad
+ \sum_bm_bx_{bp}\le Q_{g(p)},\qquad
+ \sum_bv_bx_{bp}\le V_{g(p)},\qquad
+ \sum_bx_{bp}\ge1.
+ \label{eq:q2:packing}
+\end{equation}
+架次访问顺序为$\pi_p=(0,i_{p1},\ldots,i_{pK_p},0)$，0表示O01，访问服务区恰为该架次所载货箱目的地，按所选顺序各访问一次。
+不同架次可重复服务同一区域，模型允许$K_p>1$，不沿用第一题的单点往返限制。
+设$q_{p\ell}$为第$\ell$航段起始剩余载荷，按此前各站已交付质量从初始载荷扣减，则
+\begin{equation}
+ E_p=\sum_{\ell=0}^{K_p}E_{g(p),i_{p\ell},i_{p,\ell+1}}(q_{p\ell}),\qquad
+ \sigma_p=1-\frac{E_p}{E_{g(p)}^{\rm use}}\ge\rho_{g(p)}=0.20.
+ \label{eq:q2:reserve}
+\end{equation}
+其中$i_{p0}=i_{p,K_p+1}=0$，$\sigma_p$为返航SOC。
+沿途仅卸货，起飞时的质量与体积约束也保证后续各段不超载。
+
+\textbf{（2）交付时刻和硬时限。}
+记$n_p$为本架次箱数，$n_{pj}$为第$j$站交付箱数；固定准备、逐箱装载、固定交接与逐箱交接参数依次为
+$\tau_g^{\rm prep},\lambda_g,\tau_g^{\rm srv},\mu_g$。
+以$A_{pj},C_{pj}$表示到达该站作业高度及完成交接时刻，有
+\begin{align}
+ o_p&=s_p+\tau_{g(p)}^{\rm prep}+\lambda_{g(p)}n_p,
+ & A_{p1}&=o_p+t_{g(p),0,i_{p1}},\notag\\
+ C_{pj}&=A_{pj}+\tau_{g(p)}^{\rm srv}+\mu_{g(p)}n_{pj},
+ & A_{p,j+1}&=C_{pj}+t_{g(p),i_{pj},i_{p,j+1}},\notag\\
+ R_p&=C_{pK_p}+t_{g(p),i_{pK_p},0},
+ & s_p&\ge0.
+ \label{eq:q2:timing}
+\end{align}
+到达递推式仅用于$j<K_p$；同一站本架次的全部货箱统一在交接结束时完成交付。
+三种机型准备时间均为300\,s，逐箱装载均为30\,s；A、B型交接为$150+30n_{pj}$\,s，C型为$180+36n_{pj}$\,s。
+医疗和首批保障要求分别落实为适用箱的
+\begin{equation}
+ C_b\le h_b\qquad(h_b<+\infty).
+ \label{eq:q2:deadline}
+\end{equation}
+普通货箱可以晚于$d_b$，但其延迟进入目标函数；不得用惩罚项代替式\eqref{eq:q2:deadline}。
+
+\textbf{（3）实体机与共享电池分配。}
+对机型$g$，实体机集合为$\mathcal D_g$，电池集合为$\mathcal E_g$。
+令$u_{pd}$和$v_{pe}$分别表示架次$p$是否使用实体机$d$、电池$e$，要求
+\begin{equation}
+ \sum_{d\in\mathcal D_{g(p)}}u_{pd}=1,\qquad
+ \sum_{e\in\mathcal E_{g(p)}}v_{pe}=1,\qquad u_{pd},v_{pe}\in\{0,1\}.
+ \label{eq:q2:entity}
+\end{equation}
+每组电池初始满电，返航后按两阶段规则补满，所需时间为
+\begin{equation}
+ T_g^{\rm chg}(\sigma)=T_g^{\rm full}
+ \left[0.65\frac{(0.9-\sigma)^+}{0.9}
+       +0.35\frac{\min\{0.1,1-\sigma\}}{0.1}\right],\qquad
+ B_p=R_p+T_{g(p)}^{\rm chg}(\sigma_p).
+ \label{eq:q2:charging}
+\end{equation}
+这里$(x)^+=\max\{0,x\}$，$B_p$为该电池再次可用时刻。
+任意两个不同架次$p,q$使用相同资源时，需满足
+\begin{align}
+ u_{pd}=u_{qd}=1&\ \Longrightarrow\ R_p\le s_q\ \lor\ R_q\le s_p,\notag\\
+ v_{pe}=v_{qe}=1&\ \Longrightarrow\ B_p\le s_q\ \lor\ B_q\le s_p.
+ \label{eq:q2:nonoverlap}
+\end{align}
+实体机占用$[s_p,R_p)$，电池占用$[s_p,B_p)$，准备与装载阶段也占用两种资源。
+半开区间允许前一占用结束时立即复用；运输机换电包含于下一次准备，不额外添加中继机的300\,s周转规则。
+不同电池可并行充电，不引入附件未给出的充电器数量限制。
+
+\textbf{（4）多目标评价。}
+在上述约束满足的前提下，采用
+\begin{equation}
+ \operatorname{lexmin}(W,T,E,N),\qquad
+ \begin{aligned}
+  W&=\sum_{b\in\mathcal B}w_b(C_b-d_b)^+,\\
+  T&=\max_{p\in\mathcal P}R_p,\qquad
+  E=\sum_{p\in\mathcal P}E_p,\qquad N=|\mathcal P|.
+ \end{aligned}
+ \label{eq:q2:objective}
+\end{equation}
+全部任务完成时间$T$以最后一架运输机返航为界，不取最后一箱交付时刻，也不包括任务结束后的末次补电。
+字典序首先比较加权延迟，仅在前一指标相同时比较下一指标。
+该顺序为本文的决策选择；另报告节能或少架次的代表方案，以说明牺牲完成时间可以获得的资源代价变化。

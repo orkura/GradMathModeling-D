@@ -1,0 +1,835 @@
+[
+  {
+    "label": "S01",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 32,
+    "relay_sorties": 10,
+    "transport_energy_kwh": 82.12751245703011,
+    "relay_energy_kwh": 4.413149655925325,
+    "total_energy_kwh": 86.54066211295543,
+    "makespan_s": 10461.828436479751,
+    "transport_makespan_s": 10461.828436479751,
+    "weighted_tardiness": 62758.74819764224,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2095840589615542,
+    "min_relay_soc": 0.8180481906316226,
+    "runtime_s": 8.86740380000083
+  },
+  {
+    "label": "S02",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 29,
+    "transport_sorties": 6,
+    "runtime_s": 9.89088989999982
+  },
+  {
+    "label": "S03",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S014-WAT-01",
+    "scheduled_boxes": 32,
+    "transport_sorties": 7,
+    "runtime_s": 2.625451800000519
+  },
+  {
+    "label": "S04",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S014-WAT-01",
+    "scheduled_boxes": 28,
+    "transport_sorties": 7,
+    "runtime_s": 0.028965900000002875
+  },
+  {
+    "label": "S05",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 24,
+    "transport_sorties": 5,
+    "runtime_s": 0.63370710000072
+  },
+  {
+    "label": "S06",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 25,
+    "transport_sorties": 6,
+    "runtime_s": 2.367472099999759
+  },
+  {
+    "label": "S07",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 28,
+    "transport_sorties": 7,
+    "runtime_s": 0.02666040000076464
+  },
+  {
+    "label": "S08",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 23,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 77.52675092573593,
+    "relay_energy_kwh": 5.058823899298913,
+    "total_energy_kwh": 82.58557482503484,
+    "makespan_s": 11663.245002558262,
+    "transport_makespan_s": 11645.013041140764,
+    "weighted_tardiness": 201588.28809918952,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.21158081694710895,
+    "min_relay_soc": 0.4855679497749188,
+    "runtime_s": 16.775848499999483
+  },
+  {
+    "label": "S09",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S014-WAT-01",
+    "scheduled_boxes": 25,
+    "transport_sorties": 5,
+    "runtime_s": 0.1301210000001447
+  },
+  {
+    "label": "S10",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 14,
+    "transport_sorties": 7,
+    "runtime_s": 0.021365999999943597
+  },
+  {
+    "label": "S11",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 34,
+    "transport_sorties": 7,
+    "runtime_s": 0.6492804999998043
+  },
+  {
+    "label": "S12",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S012-WAT-01",
+    "scheduled_boxes": 19,
+    "transport_sorties": 4,
+    "runtime_s": 0.07648380000046018
+  },
+  {
+    "label": "S13",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 52,
+    "transport_sorties": 18,
+    "runtime_s": 0.11100559999977122
+  },
+  {
+    "label": "S14",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 26,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 82.4474167326179,
+    "relay_energy_kwh": 4.5286263247575285,
+    "total_energy_kwh": 86.97604305737542,
+    "makespan_s": 10937.065848582455,
+    "transport_makespan_s": 10801.524748737556,
+    "weighted_tardiness": 95238.1611845255,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2069038748830666,
+    "min_relay_soc": 0.7644922167234343,
+    "runtime_s": 6.711014799999248
+  },
+  {
+    "label": "S15",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 28,
+    "relay_sorties": 7,
+    "transport_energy_kwh": 83.53974365640379,
+    "relay_energy_kwh": 5.1071543714667325,
+    "total_energy_kwh": 88.64689802787052,
+    "makespan_s": 11860.37138177425,
+    "transport_makespan_s": 11860.37138177425,
+    "weighted_tardiness": 133917.5293407731,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2034244819177875,
+    "min_relay_soc": 0.31872057884927973,
+    "runtime_s": 0.8963701000002402
+  },
+  {
+    "label": "S16",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 38,
+    "transport_sorties": 10,
+    "runtime_s": 0.06865910000033182
+  },
+  {
+    "label": "S17",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-MED-01",
+    "scheduled_boxes": 60,
+    "transport_sorties": 17,
+    "runtime_s": 0.5712874000000738
+  },
+  {
+    "label": "S18",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 55,
+    "transport_sorties": 18,
+    "runtime_s": 0.6269978999998784
+  },
+  {
+    "label": "S19",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 52,
+    "transport_sorties": 18,
+    "runtime_s": 0.1006336000000374
+  },
+  {
+    "label": "S20",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 26,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 80.58333853091891,
+    "relay_energy_kwh": 5.49737851518875,
+    "total_energy_kwh": 86.08071704610765,
+    "makespan_s": 12268.73600662673,
+    "transport_makespan_s": 12268.73600662673,
+    "weighted_tardiness": 273496.22556837683,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.20777383915407488,
+    "min_relay_soc": 0.5151225590286419,
+    "runtime_s": 1.0376827000000048
+  },
+  {
+    "label": "S21",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 55,
+    "transport_sorties": 18,
+    "runtime_s": 0.40743450000081793
+  },
+  {
+    "label": "S22",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 52,
+    "transport_sorties": 18,
+    "runtime_s": 0.11008589999983087
+  },
+  {
+    "label": "S23",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-MED-01",
+    "scheduled_boxes": 60,
+    "transport_sorties": 17,
+    "runtime_s": 0.2277248000000327
+  },
+  {
+    "label": "S24",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 23,
+    "relay_sorties": 9,
+    "transport_energy_kwh": 75.50733731091132,
+    "relay_energy_kwh": 5.473855221985315,
+    "total_energy_kwh": 80.98119253289664,
+    "makespan_s": 12736.050697988181,
+    "transport_makespan_s": 12736.050697988181,
+    "weighted_tardiness": 398894.3263171608,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.20777383915407488,
+    "min_relay_soc": 0.5931385153054143,
+    "runtime_s": 0.4362422999993214
+  },
+  {
+    "label": "S25",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-WAT-01",
+    "scheduled_boxes": 52,
+    "transport_sorties": 18,
+    "runtime_s": 0.10313509999923554
+  },
+  {
+    "label": "S26",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-MED-01",
+    "scheduled_boxes": 60,
+    "transport_sorties": 17,
+    "runtime_s": 0.22549400000025344
+  },
+  {
+    "label": "S27",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 29,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 87.45671580315485,
+    "relay_energy_kwh": 5.800152496852488,
+    "total_energy_kwh": 93.25686830000734,
+    "makespan_s": 12092.570690255492,
+    "transport_makespan_s": 12054.114816138408,
+    "weighted_tardiness": 115484.93952424466,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2034244819177875,
+    "min_relay_soc": 0.3574491682056521,
+    "runtime_s": 1.0643097000001944
+  },
+  {
+    "label": "S28",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 33,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 76.68172462047302,
+    "relay_energy_kwh": 3.9995761072999643,
+    "total_energy_kwh": 80.68130072777298,
+    "makespan_s": 9403.66136385571,
+    "transport_makespan_s": 9403.66136385571,
+    "weighted_tardiness": 182621.30315637134,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2149046608856866,
+    "min_relay_soc": 0.6290188368571867,
+    "runtime_s": 0.12281689999963419
+  },
+  {
+    "label": "S29",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-MED-01",
+    "scheduled_boxes": 60,
+    "transport_sorties": 17,
+    "runtime_s": 0.22508530000050087
+  },
+  {
+    "label": "S30",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-WAT-01",
+    "scheduled_boxes": 59,
+    "transport_sorties": 17,
+    "runtime_s": 0.808863599999313
+  },
+  {
+    "label": "S31",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-MED-01",
+    "scheduled_boxes": 52,
+    "transport_sorties": 18,
+    "runtime_s": 0.10805020000043442
+  },
+  {
+    "label": "S32",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 26,
+    "relay_sorties": 7,
+    "transport_energy_kwh": 83.39128738939918,
+    "relay_energy_kwh": 5.450925945903547,
+    "total_energy_kwh": 88.84221333530273,
+    "makespan_s": 11658.05658846856,
+    "transport_makespan_s": 11642.287173670547,
+    "weighted_tardiness": 271129.29454648047,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.20379030538687692,
+    "min_relay_soc": 0.45301749805187497,
+    "runtime_s": 0.24370200000066689
+  },
+  {
+    "label": "S33",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-WAT-01",
+    "scheduled_boxes": 59,
+    "transport_sorties": 17,
+    "runtime_s": 0.38266050000038376
+  },
+  {
+    "label": "S34",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S008-WAT-01",
+    "scheduled_boxes": 52,
+    "transport_sorties": 18,
+    "runtime_s": 0.09948090000034426
+  },
+  {
+    "label": "S35",
+    "feasible": false,
+    "reason": "No feasible placement in the bounded candidate family",
+    "seed_box": "S004-MED-01",
+    "scheduled_boxes": 61,
+    "transport_sorties": 17,
+    "runtime_s": 0.22379949999958626
+  },
+  {
+    "label": "S36",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 26,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 82.9557443569677,
+    "relay_energy_kwh": 5.645250047255858,
+    "total_energy_kwh": 88.60099440422356,
+    "makespan_s": 12597.239921222223,
+    "transport_makespan_s": 12597.239921222223,
+    "weighted_tardiness": 292366.1059330246,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.20379030538687692,
+    "min_relay_soc": 0.5390592607369766,
+    "runtime_s": 0.908482400000139
+  },
+  {
+    "label": "CP1",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 32,
+    "relay_sorties": 10,
+    "transport_energy_kwh": 82.12751245703011,
+    "relay_energy_kwh": 4.4192607670364366,
+    "total_energy_kwh": 86.54677322406654,
+    "makespan_s": 10565.989822297786,
+    "transport_makespan_s": 10565.989822297786,
+    "weighted_tardiness": 45125.21368797178,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2095840589615542,
+    "min_relay_soc": 0.8178572184094004,
+    "refinement": {
+      "method": "CP-SAT fixed-structure timing and cumulative resource allocation",
+      "time_grid_s": 1,
+      "relay_service_extension_s": 2,
+      "time_limit_s": 60.0,
+      "seed": 20260924,
+      "workers": 1,
+      "horizon_s": 11062,
+      "weight_integer_scale": 1,
+      "phase_1_weighted_tardiness": {
+        "status": "FEASIBLE",
+        "wall_time_s": 30.0036516,
+        "objective_bound": 12876.0,
+        "objective": 45144
+      },
+      "phase_2_makespan": {
+        "status": "FEASIBLE",
+        "wall_time_s": 30.007055800000003,
+        "objective_bound": 8209.0,
+        "objective": 10566.0
+      },
+      "runtime_s": 60.15422519999993,
+      "previous_metrics": {
+        "boxes_delivered": 80,
+        "transport_sorties": 32,
+        "relay_sorties": 10,
+        "transport_energy_kwh": 82.12751245703011,
+        "relay_energy_kwh": 4.413149655925325,
+        "total_energy_kwh": 86.54066211295543,
+        "makespan_s": 10461.828436479751,
+        "transport_makespan_s": 10461.828436479751,
+        "weighted_tardiness": 62758.74819764224,
+        "hard_deadline_violations": 0,
+        "min_transport_soc": 0.2095840589615542,
+        "min_relay_soc": 0.8180481906316226
+      },
+      "fixed": [
+        "box batches",
+        "route order",
+        "transport types",
+        "relay sites",
+        "relay associations"
+      ],
+      "scope": "Bounds and statuses apply only to this fixed-structure, conservatively rounded timing model, not the full Q3 optimization problem.",
+      "relay_requirement_offsets": {
+        "T002": [
+          816.0140302955236,
+          1753.6694341427678
+        ],
+        "T004": [
+          774.3531910371304,
+          1226.225054217176
+        ],
+        "T005": [
+          786.5306487072558,
+          1207.6428892789738
+        ],
+        "T006": [
+          772.0871101148816,
+          1181.826687964093
+        ],
+        "T007": [
+          744.8547861519021,
+          1548.8019725697961
+        ],
+        "T008": [
+          800.880422165937,
+          1427.7341827295077
+        ],
+        "T009": [
+          912.3031112263509,
+          1960.2762972530754
+        ],
+        "T010": [
+          957.4660924011622,
+          1796.5366766685092
+        ],
+        "T011": [
+          757.6611476397716,
+          1577.8232813001603
+        ],
+        "T012": [
+          794.1595291023457,
+          1394.4754839401353
+        ],
+        "T013": [
+          750.0481407423376,
+          1288.8959457644808
+        ],
+        "T014": [
+          743.0538578633729,
+          1294.5115252935987
+        ],
+        "T021": [
+          769.9714027070522,
+          1261.0887950619024
+        ],
+        "T022": [
+          696.0140302955235,
+          1489.6694341427676
+        ],
+        "T023": [
+          769.1423235267653,
+          1655.6432796850963
+        ],
+        "T024": [
+          691.7536213421067,
+          1052.9687723606792
+        ],
+        "T025": [
+          742.0871101148816,
+          1121.8266879640933
+        ],
+        "T027": [
+          792.3031112263509,
+          1696.2762972530757
+        ],
+        "T028": [
+          758.53329775012,
+          1386.7869535516886
+        ],
+        "T030": [
+          769.1423235267653,
+          1655.6432796850963
+        ],
+        "T031": [
+          713.0538578633729,
+          1234.5115252935987
+        ]
+      }
+    }
+  },
+  {
+    "label": "CP2",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 33,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 76.68172462047302,
+    "relay_energy_kwh": 4.004464996188854,
+    "total_energy_kwh": 80.68618961666188,
+    "makespan_s": 9682.20294636674,
+    "transport_makespan_s": 9249.191340168996,
+    "weighted_tardiness": 37597.854351594855,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.2149046608856866,
+    "min_relay_soc": 0.6288278646349645,
+    "refinement": {
+      "method": "CP-SAT fixed-structure timing and cumulative resource allocation",
+      "time_grid_s": 1,
+      "relay_service_extension_s": 2,
+      "time_limit_s": 60.0,
+      "seed": 20260925,
+      "workers": 1,
+      "horizon_s": 10004,
+      "weight_integer_scale": 1,
+      "phase_1_weighted_tardiness": {
+        "status": "FEASIBLE",
+        "wall_time_s": 30.0069316,
+        "objective_bound": 0.0,
+        "objective": 37632
+      },
+      "phase_2_makespan": {
+        "status": "FEASIBLE",
+        "wall_time_s": 30.003294,
+        "objective_bound": 5967.0,
+        "objective": 9683.0
+      },
+      "runtime_s": 60.141257100000075,
+      "previous_metrics": {
+        "boxes_delivered": 80,
+        "transport_sorties": 33,
+        "relay_sorties": 8,
+        "transport_energy_kwh": 76.68172462047302,
+        "relay_energy_kwh": 3.9995761072999643,
+        "total_energy_kwh": 80.68130072777298,
+        "makespan_s": 9403.66136385571,
+        "transport_makespan_s": 9403.66136385571,
+        "weighted_tardiness": 182621.30315637134,
+        "hard_deadline_violations": 0,
+        "min_transport_soc": 0.2149046608856866,
+        "min_relay_soc": 0.6290188368571867
+      },
+      "fixed": [
+        "box batches",
+        "route order",
+        "transport types",
+        "relay sites",
+        "relay associations"
+      ],
+      "scope": "Bounds and statuses apply only to this fixed-structure, conservatively rounded timing model, not the full Q3 optimization problem.",
+      "relay_requirement_offsets": {
+        "T001": [
+          744.8547861519021,
+          1548.8019725697961
+        ],
+        "T002": [
+          800.880422165937,
+          1427.7341827295077
+        ],
+        "T003": [
+          816.0140302955236,
+          1753.6694341427678
+        ],
+        "T004": [
+          859.9714027070522,
+          1459.0887950619024
+        ],
+        "T005": [
+          786.5306487072558,
+          1207.6428892789738
+        ],
+        "T006": [
+          772.0871101148816,
+          1181.826687964093
+        ],
+        "T009": [
+          793.3628353474447,
+          1648.118665010237
+        ],
+        "T010": [
+          957.4660924011622,
+          1796.5366766685092
+        ],
+        "T011": [
+          834.008436458131,
+          1791.1721254977515
+        ],
+        "T012": [
+          794.1595291023457,
+          1394.4754839401353
+        ],
+        "T013": [
+          750.0481407423376,
+          1288.8959457644808
+        ],
+        "T014": [
+          743.0538578633729,
+          1294.5115252935987
+        ],
+        "T025": [
+          683.9304133521642,
+          1420.67677484101
+        ],
+        "T026": [
+          828.0281993356732,
+          1765.533894413838
+        ],
+        "T027": [
+          822.3031112263509,
+          1762.2762972530757
+        ],
+        "T028": [
+          691.7536213421067,
+          1052.9687723606792
+        ],
+        "T029": [
+          742.0871101148816,
+          1121.8266879640933
+        ],
+        "T031": [
+          758.53329775012,
+          1386.7869535516886
+        ],
+        "T032": [
+          713.0538578633729,
+          1234.5115252935987
+        ]
+      }
+    }
+  },
+  {
+    "label": "CP3",
+    "feasible": true,
+    "boxes_delivered": 80,
+    "transport_sorties": 23,
+    "relay_sorties": 8,
+    "transport_energy_kwh": 77.52675092573593,
+    "relay_energy_kwh": 5.063712788187801,
+    "total_energy_kwh": 82.59046371392373,
+    "makespan_s": 11600.524963810129,
+    "transport_makespan_s": 11511.902350079685,
+    "weighted_tardiness": 190993.32338009647,
+    "hard_deadline_violations": 0,
+    "min_transport_soc": 0.21158081694710895,
+    "min_relay_soc": 0.4853769775526966,
+    "refinement": {
+      "method": "CP-SAT fixed-structure timing and cumulative resource allocation",
+      "time_grid_s": 1,
+      "relay_service_extension_s": 2,
+      "time_limit_s": 60.0,
+      "seed": 20260926,
+      "workers": 1,
+      "horizon_s": 12264,
+      "weight_integer_scale": 1,
+      "phase_1_weighted_tardiness": {
+        "status": "OPTIMAL",
+        "wall_time_s": 1.5396729,
+        "objective_bound": 191018.0,
+        "objective": 191018
+      },
+      "phase_2_makespan": {
+        "status": "OPTIMAL",
+        "wall_time_s": 0.0491568,
+        "objective_bound": 11601.0,
+        "objective": 11601.0
+      },
+      "runtime_s": 1.746786400000019,
+      "previous_metrics": {
+        "boxes_delivered": 80,
+        "transport_sorties": 23,
+        "relay_sorties": 8,
+        "transport_energy_kwh": 77.52675092573593,
+        "relay_energy_kwh": 5.058823899298913,
+        "total_energy_kwh": 82.58557482503484,
+        "makespan_s": 11663.245002558262,
+        "transport_makespan_s": 11645.013041140764,
+        "weighted_tardiness": 201588.28809918952,
+        "hard_deadline_violations": 0,
+        "min_transport_soc": 0.21158081694710895,
+        "min_relay_soc": 0.4855679497749188
+      },
+      "fixed": [
+        "box batches",
+        "route order",
+        "transport types",
+        "relay sites",
+        "relay associations"
+      ],
+      "scope": "Bounds and statuses apply only to this fixed-structure, conservatively rounded timing model, not the full Q3 optimization problem.",
+      "relay_requirement_offsets": {
+        "T001": [
+          1503.7945802231486,
+          1973.5463858964158
+        ],
+        "T002": [
+          1360.623748011451,
+          1797.5394995717165
+        ],
+        "T003": [
+          713.9304133521642,
+          1480.67677484101
+        ],
+        "T005": [
+          808.4187242090106,
+          1253.2884710917826
+        ],
+        "T006": [
+          800.880422165937,
+          1427.7341827295077
+        ],
+        "T007": [
+          744.8547861519021,
+          1548.8019725697961
+        ],
+        "T008": [
+          1329.0297341884805,
+          2317.5978916016707
+        ],
+        "T009": [
+          957.4660924011622,
+          1796.5366766685092
+        ],
+        "T010": [
+          804.008436458131,
+          2084.183244860467
+        ],
+        "T011": [
+          794.1595291023457,
+          1394.4754839401353
+        ],
+        "T012": [
+          743.0538578633729,
+          1294.5115252935987
+        ],
+        "T013": [
+          1279.8253802231266,
+          2146.2983448352797
+        ],
+        "T014": [
+          808.4187242090106,
+          1253.2884710917826
+        ],
+        "T017": [
+          786.5306487072558,
+          1579.8344730476385
+        ],
+        "T018": [
+          727.6611476397716,
+          1517.8232813001603
+        ],
+        "T019": [
+          828.0281993356732,
+          1765.533894413838
+        ],
+        "T020": [
+          788.53329775012,
+          2124.329653074565
+        ],
+        "T021": [
+          1176.364897592906,
+          2127.1888250349743
+        ],
+        "T022": [
+          677.478347114266,
+          1632.444779052964
+        ],
+        "T023": [
+          769.1423235267653,
+          1655.6432796850963
+        ]
+      }
+    }
+  }
+]

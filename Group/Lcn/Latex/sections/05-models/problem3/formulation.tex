@@ -1,0 +1,121 @@
+% !TEX root = ../../../MathModel.tex
+% 负责人：罗财能。
+\subsubsection{模型建立}
+\label{sec:q3:formulation}
+
+\textbf{（1）货箱组批、航线和时限。}
+令$x_{bp}\in\{0,1\}$表示货箱$b$是否由架次$p$运输，$g(p)$为其机型，$V_g$为机型$g$的装载容积上限。
+每个选用架次至少装载一箱，访问顺序记为$\pi_p=(0,i_{p1},\ldots,i_{pK_p},0)$，其中0表示O01，访问节点恰为本架次货箱的目的服务区。
+不可拆箱、唯一分配和容量约束为
+\begin{equation}
+  \sum_{p\in\mathcal P}x_{bp}=1,\qquad
+  \sum_{b\in\mathcal B}m_bx_{bp}\le Q_{g(p)},\qquad
+  \sum_{b\in\mathcal B}v_bx_{bp}\le V_{g(p)}.
+  \label{eq:q3:packing}
+\end{equation}
+沿途只卸货不装货，故起飞时的质量和体积约束也保证后续航段不超载。
+本文搜索限制为$K_p\le3$，这是算法的候选路线范围，并非题目新增的物理约束。
+
+设$n_p=\sum_bx_{bp}$，$n_{pj}$为在第$j$个服务区交付的箱数，$A_{pj},C_{pj}$为到达该点作业高度和交接完成时刻。
+以$\tau_g^{\rm prep},\lambda_g,\tau_g^{\rm srv},\mu_g$分别表示固定准备、逐箱装载、固定交接和逐箱交接时间，则
+\begin{align}
+  o_p&=s_p+\tau_{g(p)}^{\rm prep}+\lambda_{g(p)}n_p,
+  & A_{p1}&=o_p+t_{g(p),0,i_{p1}},\notag\\
+  C_{pj}&=A_{pj}+\tau_{g(p)}^{\rm srv}+\mu_{g(p)}n_{pj},
+  & A_{p,j+1}&=C_{pj}+t_{g(p),i_{pj},i_{p,j+1}},\notag\\
+  R_p&=C_{pK_p}+t_{g(p),i_{pK_p},0},
+  & C_b&\le h_b\quad(h_b<+\infty).
+  \label{eq:q3:transport-time}
+\end{align}
+同一架次在同一服务区卸下的货箱，其$C_b$均取该站$C_{pj}$；最后一站不再使用到达递推式。
+三种机型的准备时间均为300\,s、逐箱装载时间均为30\,s；A、B型交接时间为$150+30n_{pj}$\,s，C型为$180+36n_{pj}$\,s。
+总运输能耗按式\eqref{eq:q3:energy}沿路线累加，且每次返航均须保留20\%能量：
+\begin{equation}
+  E_p^{\rm T}=\sum_{\ell=0}^{K_p}
+     E_{g(p),i_{p\ell},i_{p,\ell+1}}(q_{p\ell}),\qquad
+  \sigma_p=1-\frac{E_p^{\rm T}}{E_{g(p)}^{\rm use}}\ge0.20.
+  \label{eq:q3:reserve}
+\end{equation}
+这里$i_{p0}=i_{p,K_p+1}=0$，$q_{p\ell}$为对应航段的剩余载荷。
+
+\textbf{（2）中继架次与能源约束。}
+对中继架次$r$，选择候选悬停点$\boldsymbol y_r$、准备开始时刻$s_r$及服务结束时刻$v_r$。
+悬停点必须位于DEM覆盖范围，离地高度满足$0<z_r-H^{\rm DEM}(x_r,y_r)\le300$\,m。
+令$t_r^{\rm out},t_r^{\rm back}$为按式\eqref{eq:q3:flight-time}计算的往返飞行时间，$a_r,u_r,R_r$为到位、建链完成和返航时刻，则
+\begin{equation}
+  a_r=s_r+180+t_r^{\rm out},\quad
+  u_r=a_r+30,\quad v_r\ge u_r,\quad
+  R_r=v_r+t_r^{\rm back}.
+  \label{eq:q3:relay-time}
+\end{equation}
+令$d_r$为O01至悬停点的水平距离，$h_r^{\rm out},h_r^{\rm back}$为往返航段各自的爬升高度。
+使用附件的中继巡航功率$P_R^{\rm c}=1.15$\,kW、悬停功率$P_R^{\rm h}=1.05$\,kW、通信附加功率$P_R^{\rm a}=0.05$\,kW及计划总质量$m_R=23.5$\,kg，计算
+\begin{align}
+  E_r^{\rm R}&=P_R^{\rm c}\frac{2d_r/v_R^{\rm c}}{3600}
+     +\frac{m_Rg_0(h_r^{\rm out}+h_r^{\rm back})}
+       {\eta_R^{\uparrow}\,3.6\times10^6}
+     +(P_R^{\rm h}+P_R^{\rm a})\frac{v_r-a_r}{3600},\notag\\
+  \sigma_r&=1-E_r^{\rm R}/3.2\ge0.20.
+  \label{eq:q3:relay-energy}
+\end{align}
+到位后的30\,s建链也计入悬停与通信能耗；不同中继架次可以使用不同悬停位置。
+
+\textbf{（3）全过程通信与保障关系。}
+设$\boldsymbol x_p(t)$为运输轨迹，$G$为网关位置，$D_p(t)$表示直连链路可用，$A_{pr}(t)$和$B_r$分别表示接入、回传链路可用。
+这些逻辑量均由式\eqref{eq:q3:path-loss}与双向预算判定。
+运输从起飞到返航的任一时刻必须满足
+\begin{equation}
+  D_p(t)\ \lor\!
+  \bigvee_{r\in\mathcal R}
+     \left\{u_r\le t\le v_r,\ A_{pr}(t)=1,\ B_r=1\right\},
+  \qquad t\in[o_p,R_p].
+  \label{eq:q3:continuous-radio}
+\end{equation}
+该区间包括爬升、巡航、下降和交接阶段。
+直连可用时实际优先选择直连，否则选一架可用中继，不允许中继之间多跳。
+同一中继可保障多个运输机，题目未给接入容量和频谱干扰限制，因此不额外添加一对一约束。
+求解中进一步为每个需中继的运输架次固定一个保底中继架次及位置，并令其服务窗覆盖该运输架次全部需中继区间。
+这比每时刻仅选一架中继更严格，是用于降低组合规模的搜索限制。
+
+对于一段线性轨迹和固定通信端点，三维距离的最大值$D_{\max}$在端点取得。
+首先用最坏遮挡损耗构造整段裕度下界
+\begin{equation}
+  \underline M=B_{ab}-\left[32.45+20\log_{10}(2400)
+       +20\log_{10}(D_{\max}/1000)\right]-10.
+  \label{eq:q3:certificate}
+\end{equation}
+若$\underline M\ge0$，则该段即使全程遮挡仍可通信。
+否则，对移动端点与固定通信端点形成的完整视线扫掠三角形逐像元检查；若能证明全段无遮挡，则去掉10\,dB损耗后重新判断。
+不能取得证书的区间继续细分，独立核验最小细分间隔为0.25\,s，仍未获证书的区间判为未通过。
+因此，2\,s离散采样仅用于额外复核，连续覆盖结论来自整段上下界检查，且仅在局部仿射坐标和分片常值DEM模型内成立。
+
+\textbf{（4）实体与能源资源占用。}
+初始资源均在O01且满电，同机型电池可以共享，跨机型不得混用。
+返航SOC为$\sigma\in[0,1]$、从0充至100\%的时长参数为$T_g^{\rm full}$时，按题设两阶段充电模型补满所需时间为
+\begin{equation}
+  T_g^{\rm chg}(\sigma)=T_g^{\rm full}
+  \left[0.65\frac{(0.9-\sigma)^+}{0.9}
+       +0.35\frac{\min\{0.1,1-\sigma\}}{0.1}\right].
+  \label{eq:q3:charging}
+\end{equation}
+其中$(x)^+=\max\{0,x\}$；A、B、C和中继能源组件的$T_g^{\rm full}$依次为1800、2400、3000和1800\,s。
+运输机占用区间为$[s_p,R_p)$，其电池占用至$R_p+T_{g(p)}^{\rm chg}(\sigma_p)$；中继机占用区间为$[s_r,R_r+300)$，能源组件占用至$R_r+T_R^{\rm chg}(\sigma_r)$。
+同一实体或能源资源被分配的区间必须两两不相交，同类资源的并发占用不得超过表\ref{tab:q3:inventory}库存。
+使用半开区间使前一任务结束即可开始下一任务，换电包含在准备时间内；中继机另保留300\,s周转。
+不同电池或能源组件允许并行充电，不引入题目未给出的充电器数量限制。
+
+\textbf{（5）多目标选择准则。}
+在上述约束全部满足的方案中，本文采用
+\begin{equation}
+  \operatorname{lexmin}\left(W,T,E,N\right),\qquad
+  \begin{aligned}
+    W&=\sum_{b\in\mathcal B}w_b(C_b-d_b)^+,\\
+    T&=\max\!\left\{\max_{p\in\mathcal P}R_p,\max_{r\in\mathcal R}R_r\right\},\\
+    E&=\sum_{p\in\mathcal P}E_p^{\rm T}+\sum_{r\in\mathcal R}E_r^{\rm R},\qquad
+    N=|\mathcal P|+|\mathcal R|.
+  \end{aligned}
+  \label{eq:q3:objective}
+\end{equation}
+其中$W$的单位为加权秒，$T$以两类无人机最后返航为界，不包含任务结束后的最终补电和周转。
+硬期限不允许用目标函数中的惩罚替代。
+字典序意味着后面的指标仅在前面的指标相同时用于比较，不能据此声称该方案分别使所有指标最小。
